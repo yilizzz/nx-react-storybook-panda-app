@@ -1,0 +1,14 @@
+diff --git a/node_modules/@nx/vite/plugins/nx-tsconfig-paths.plugin.js b/node_modules/@nx/vite/plugins/nx-tsconfig-paths.plugin.js
+index 9496294..da0e2f7 100644
+--- a/node_modules/@nx/vite/plugins/nx-tsconfig-paths.plugin.js
++++ b/node_modules/@nx/vite/plugins/nx-tsconfig-paths.plugin.js
+@@ -106,7 +106,8 @@ function nxViteTsPaths(options = {}) {
+                 logIt('Using fallback path matching.');
+                 resolvedFile = matchTsPathFallback == null ? void 0 : matchTsPathFallback(importPath);
+             }
+-            if (!resolvedFile || !(0, _nodefs.existsSync)(resolvedFile)) {
++            //if (!resolvedFile || !(0, _nodefs.existsSync)(resolvedFile)) {
++            if (!resolvedFile || !_nodepath.extname(resolvedFile)) {
+                 if (tsConfigPathsEsm || tsConfigPathsFallback) {
+                     logIt(`Unable to resolve ${importPath} with tsconfig paths. Using fallback file matching.`);
+                     resolvedFile = loadFileFromPaths(tsConfigPathsEsm, importPath) || loadFileFromPaths(tsConfigPathsFallback, importPath);
