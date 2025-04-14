@@ -1,11 +1,21 @@
 import { defineConfig } from '@pandacss/dev';
-
+import { sharedTheme } from '../../panda.shared.config';
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
 
   // Where to look for your css declarations
-  include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
+  include: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './pages/**/*.{js,jsx,ts,tsx}',
+    // Configure Panda CSS to Include Your Library's Source:
+    // You need to tell Panda CSS in your main project to also look at the source files of your library to generate the necessary CSS.
+    // Panda CSS is a Build-Time Transformation
+    // Styles are Generated Based on Code Usage
+    // Main Project's Panda CSS Needs to See the Declarations
+    // Not Pre-compiled CSS
+    '../../packages/ui/src/**/*.{js,jsx,ts,tsx}',
+  ],
 
   // Files to exclude
   exclude: [],
@@ -13,60 +23,8 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {
-      breakpoints: {
-        xs2: '320px',
-        xs: '480px',
-        xl2: '1536px',
-        xl3: '1728px',
-      },
-      tokens: {
-        fontSizes: {
-          sm: { value: '14px' },
-          md: { value: '16px' },
-          lg: { value: '22px' },
-          xl: { value: '26px' },
-          xl2: { value: '32px' },
-        },
-        lineHeights: {
-          sm: { value: '16px' },
-          md: { value: '18px' },
-          lg: { value: '26px' },
-          xl: { value: '30px' },
-          xl2: { value: '40px' },
-        },
-        fontWeights: {
-          light: { value: '300' },
-          normal: { value: '400' },
-          medium: { value: '500' },
-          bold: { value: '700' },
-        },
-        radii: {
-          none: { value: '0' },
-          md: { value: '12px' },
-          lg: { value: '24px' },
-          full: { value: '999px' },
-        },
-        sizes: {
-          '8xl': {
-            value: '1770px',
-          },
-        },
-        spacing: {},
-        colors: {
-          primary: { value: '#1B4D3E' },
-          primaryLight: { value: '#72a5b0' },
-          secondary: { value: '#690B22' },
-          secondaryLight: { value: '#f0a5a8' },
-          tertiary: { value: '#E07A5F' },
-          tertiaryLight: { value: '#F1E3D3' },
-          white: { value: 'whiteSmoke' },
-          dark: { value: '#33404a' },
-          danger: { value: '#EE0F0F' },
-          success: { value: '#0FEE0F' },
-        },
-      },
-
-      recipes: {},
+      ...sharedTheme,
+      // Add main project-specific theme extensions if needed
     },
   },
 

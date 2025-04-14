@@ -1,4 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
+import { sharedTheme } from '../../panda.shared.config';
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
@@ -15,7 +16,7 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {
+    /*  extend: {
       breakpoints: {
         xs2: '320px',
         xs: '480px',
@@ -70,6 +71,10 @@ export default defineConfig({
       },
 
       recipes: {},
+    }, */
+    extend: {
+      ...sharedTheme,
+      // Add library-specific theme extensions if needed
     },
   },
 
