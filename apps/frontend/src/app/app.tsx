@@ -1,16 +1,14 @@
 // Uncomment this line to use CSS modules
 // import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
 import './app.module.css';
 import { Route, Routes, Link } from 'react-router-dom';
-import { Ui } from '@packages/ui';
 import { css } from '../../styled-system/css';
+import { Text } from '@packages/ui';
 export function App() {
   return (
     <div>
-      <Ui />
+      <Text variant="sectionTitle">I am Text</Text>
       <div className={css({ bg: 'secondaryLight' })}>i am pandacssed</div>
-      <NxWelcome title="frontend" />
 
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}

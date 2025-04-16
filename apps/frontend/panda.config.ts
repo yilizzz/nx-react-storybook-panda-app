@@ -1,5 +1,7 @@
 import { defineConfig } from '@pandacss/dev';
 import { sharedTheme } from '../../panda.shared.config';
+import pandaConfig from '@packages/ui/panda.config.ts';
+
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
@@ -20,10 +22,12 @@ export default defineConfig({
   // Files to exclude
   exclude: [],
 
+  jsxFramework: 'react',
   // Useful for theme customization
   theme: {
     extend: {
-      ...sharedTheme,
+      //...sharedTheme,
+      ...pandaConfig.theme?.extend,
       // Add main project-specific theme extensions if needed
     },
   },
