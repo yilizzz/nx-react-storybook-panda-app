@@ -18,7 +18,11 @@
       "@apps/frontend/*": ["apps/frontend/src/*"],
       "@packages/ui": ["packages/ui/dist"],
       "dist/ui/*": ["packages/ui/dist/*"],
-      "src/ui/*": ["packages/ui/src/*"]
+      "icons": ["packages/icons/src/index.ts"],
+      "src/ui/*": ["packages/ui/src/*"],
+      "@packages/icons": ["packages/icons/dist"],
+      "dist/icons/*": ["packages/icons/dist/*"],
+      "src/icons/*": ["packages/icons/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

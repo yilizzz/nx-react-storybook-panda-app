@@ -1,0 +1,22 @@
+{
+  "name": "@packages/icons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/icons/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project icons --web",
+  "targets": {
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "dependsOn": ["^build"]
+    },
+    "start": {
+      "dependsOn": ["^build"]
+    },
+    "serve-static": {
+      "dependsOn": ["^build"]
+    }
+  }
+}
