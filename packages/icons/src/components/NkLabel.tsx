@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkLabel = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="label"><path id="Vector" d="M10.9804 20.1944L3.68188 12.8959C3.31214 12.5261 3.10149 12.0265 3.09488 11.5037L3.00008 4.01504C2.99295 3.45157 3.45156 2.99295 4.01504 3.00008L11.5037 3.09488C12.0265 3.10149 12.5261 3.31214 12.8959 3.68188L20.1944 10.9804C20.8675 11.6535 21.3858 12.939 20.6177 13.7072L13.7072 20.6177C12.939 21.3858 11.6535 20.8675 10.9804 20.1944Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M8.019 7.55232L7.31189 6.84521" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkLabel);
+export default ForwardRef;

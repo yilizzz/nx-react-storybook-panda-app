@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkLightningSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="lightning-slash"><path id="Vector" d="M3 21L9.971 14.029M21 3L14.029 9.97101M9.971 14.029H11.4628C11.748 14.029 11.9688 14.2964 11.9334 14.5992L11.2521 20.4282C11.1933 20.9308 11.7839 21.205 12.0871 20.8158L19.8892 10.803C20.1466 10.4726 19.927 9.97101 19.5248 9.97101H14.029M9.971 14.029L14.029 9.97101M5.5 14.029H4.47525C4.07311 14.029 3.85344 13.5274 4.11088 13.197L11.913 3.18417C12.2162 2.79505 12.8067 3.06922 12.748 3.57182L12.2889 7.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkLightningSlash);
+export default ForwardRef;

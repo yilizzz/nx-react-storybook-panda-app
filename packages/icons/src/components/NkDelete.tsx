@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkDelete = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="delete"><path id="Vector" d="M13.5 10L17.5 14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M17.5 10L13.5 14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M19.5953 18.5H9.29778C8.77612 18.5 8.2751 18.2962 7.90158 17.932L2.55184 12.716C2.14931 12.3235 2.1493 11.6765 2.55184 11.284L7.90158 6.068C8.27509 5.70382 8.77612 5.5 9.29778 5.5H19.5953C20.5449 5.5 21.8175 6.04117 21.8175 7.125V16.875C21.8175 17.9588 20.5449 18.5 19.5953 18.5Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkDelete);
+export default ForwardRef;

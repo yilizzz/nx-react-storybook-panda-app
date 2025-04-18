@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBrandThreads = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="brand-threads"><path id="Vector" d="M9.76955 8.51523C12.001 6.70293 15.2136 7.66883 15.5931 10.65C15.9957 13.8126 15.1921 16.32 12.0736 16.32C9.1778 16.32 9.2669 13.8 9.2669 13.8C9.2669 11.1 13.8556 10.74 16.5287 12.09C21.4292 15.24 17.8652 21 12.5191 21C8.09027 21 4.5 18.75 4.5 12C4.5 5.25 8.09027 3 12.5191 3C15.6447 3 18.4635 4.62625 19.5 7.87876" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBrandThreads);
+export default ForwardRef;

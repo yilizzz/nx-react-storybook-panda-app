@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkInfoTriangle = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="info-triangle"><path id="Vector" d="M12 17V12H11.5M11.5 17H12.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M12 9.5V9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M5.98054 10.7615C8.60706 5.58716 9.92033 3 12 3C14.0797 3 15.3929 5.58716 18.0195 10.7615L18.3467 11.4063C20.5294 15.7061 21.6207 17.856 20.6344 19.428C19.648 21 17.2078 21 12.3273 21H11.6727C6.7922 21 4.35195 21 3.36563 19.428C2.37931 17.856 3.47062 15.7061 5.65325 11.4063L5.98054 10.7615Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkInfoTriangle);
+export default ForwardRef;

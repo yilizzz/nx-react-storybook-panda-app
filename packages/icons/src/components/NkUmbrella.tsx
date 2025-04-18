@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkUmbrella = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="umbrella"><path id="Vector" d="M15.6364 13C13.2121 10.5758 10.7879 10.5758 8.36364 13C5.87784 10.8693 4.48579 10.8693 2 13C2 7.47715 6.47715 3 12 3C17.5228 3 22 7.47715 22 13C19.5142 10.8693 18.1222 10.8693 15.6364 13Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M12 11.5V18.7729C12 22.2916 6.5 22.2916 6.5 18.7729" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkUmbrella);
+export default ForwardRef;

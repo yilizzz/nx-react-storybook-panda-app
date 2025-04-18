@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkTypeBold = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="type-bold"><path id="Vector" d="M5 3H13C14.0609 3 15.0783 3.47411 15.8284 4.31802C16.5786 5.16193 17 6.30653 17 7.5C17 8.69347 16.5786 9.83807 15.8284 10.682C15.0783 11.5259 14.0609 12 13 12H5V3Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M5 12H15.0385C16.2217 12 17.3565 12.4741 18.1932 13.318C19.0299 14.1619 19.5 15.3065 19.5 16.5C19.5 17.6935 19.0299 18.8381 18.1932 19.682C17.3565 20.5259 16.2217 21 15.0385 21H5V12Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkTypeBold);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkWifiCheck = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="wifi-check"><path id="Vector" d="M2 9.48259C4.80159 6.82755 8.40078 5.5 12 5.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M15 6.32245L16.3786 7.89803C16.505 8.04251 16.733 8.03186 16.8454 7.87622L19.6449 4" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M19 12.8995C15.134 9.0335 8.866 9.0335 5 12.8995" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_4" d="M16 16.1569C13.7908 13.9477 10.2092 13.9477 8 16.1569" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_5" d="M12 19.25V18.75" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkWifiCheck);
+export default ForwardRef;

@@ -1,7 +1,11 @@
 import { defineConfig } from '@pandacss/dev';
-import { sharedTheme } from '../../panda.shared.config';
-import { textRecipe } from './src/lib/typography/text.config.recipe';
+import { textRecipe } from './src/lib/typography/text/text.config.recipe';
+import { iconRecipe } from 'src/ui/lib/typography/icon/icon.config.recipe';
+//import { iconRecipe } from './src/lib/typography/icon/icon.config.recipe';
 export default defineConfig({
+  globalCss: {
+    ':root': {},
+  },
   // Whether to use css reset
   preflight: true,
 
@@ -109,6 +113,7 @@ export default defineConfig({
       // Add library-specific theme extensions if needed
       recipes: {
         text: textRecipe,
+        icon: iconRecipe,
       },
     },
   },

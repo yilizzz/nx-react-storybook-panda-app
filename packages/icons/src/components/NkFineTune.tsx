@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkFineTune = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="fine-tune"><path id="Vector" d="M10 8.5L21 8.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M3 8.5C3 9.60457 3.89543 10.5 5 10.5C6.10457 10.5 7 9.60457 7 8.5C7 7.39543 6.10457 6.5 5 6.5C3.89543 6.5 3 7.39543 3 8.5Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M3 15.5H14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_4" d="M17 15.5C17 16.6046 17.8954 17.5 19 17.5C20.1046 17.5 21 16.6046 21 15.5C21 14.3954 20.1046 13.5 19 13.5C17.8954 13.5 17 14.3954 17 15.5Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkFineTune);
+export default ForwardRef;

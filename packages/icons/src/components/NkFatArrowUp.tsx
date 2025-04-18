@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkFatArrowUp = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="fat-arrow-up"><path id="Vector" d="M4.48325 10.8952C4.05358 10.8952 3.8384 10.3504 4.14222 10.0318L11.659 3.14815C11.8473 2.95062 12.1527 2.95062 12.341 3.14815L19.8578 10.0318C20.1616 10.3504 19.9464 10.8952 19.5167 10.8952H15.6806C15.4142 10.8952 15.1983 11.1217 15.1983 11.4011V20.4942C15.1983 20.7735 14.9824 21 14.716 21H9.28399C9.01763 21 8.80171 20.7735 8.80171 20.4942L8.80171 11.4011C8.80171 11.1217 8.58578 10.8952 8.31942 10.8952H4.48325Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkFatArrowUp);
+export default ForwardRef;

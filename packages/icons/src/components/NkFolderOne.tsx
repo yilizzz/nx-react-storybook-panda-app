@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkFolderOne = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="folder-one"><path id="Vector" d="M11.6612 7H19C20.1046 7 21 7.89543 21 9V18C21 19.1046 20.1046 20 19 20H5.00006C3.89549 20 3.00006 19.1046 3.00006 18V7M11.6612 7C11.1745 7 10.7045 6.82252 10.3393 6.50083L8.06677 4.49917C7.70154 4.17748 7.23154 4 6.74483 4H5.00006C3.89549 4 3.00006 4.89543 3.00006 6V7M11.6612 7H3.00006" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkFolderOne);
+export default ForwardRef;

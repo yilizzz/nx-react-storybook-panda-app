@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkWebcam = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="webcam"><path id="Vector" d="M12 17.4C15.9765 17.4 19.2 14.1764 19.2 10.2C19.2 6.22355 15.9765 3 12 3C8.0236 3 4.80005 6.22355 4.80005 10.2C4.80005 14.1764 8.0236 17.4 12 17.4ZM12 17.4V21M7.50005 21H16.5M14.7 10.2C14.7 11.6912 13.4912 12.9 12 12.9C10.5089 12.9 9.30005 11.6912 9.30005 10.2C9.30005 8.70883 10.5089 7.5 12 7.5C13.4912 7.5 14.7 8.70883 14.7 10.2Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkWebcam);
+export default ForwardRef;

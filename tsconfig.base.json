@@ -20,7 +20,7 @@
       "dist/ui/*": ["packages/ui/dist/*"],
       "icons": ["packages/icons/src/index.ts"],
       "src/ui/*": ["packages/ui/src/*"],
-      "@packages/icons": ["packages/icons/dist"],
+      "@packages/icons": ["packages/icons/src/index.ts"],
       "dist/icons/*": ["packages/icons/dist/*"],
       "src/icons/*": ["packages/icons/src/*"]
     }

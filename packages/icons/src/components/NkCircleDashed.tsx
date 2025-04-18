@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkCircleDashed = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="circle-dashed"><path id="Vector" d="M21 12C21 13.2414 20.7487 14.4241 20.2941 15.5M12 21C10.7586 21 9.57589 20.7487 8.5 20.2941M3 12C3 10.7586 3.25134 9.57589 3.70591 8.5M12 3C13.2414 3 14.4241 3.25134 15.5 3.70591M5.63604 5.63604C6.45119 4.82089 7.42197 4.16138 8.5 3.70591M18.364 18.364C17.5488 19.1791 16.578 19.8386 15.5 20.2941M18.364 5.63604C19.1791 6.45119 19.8386 7.42197 20.2941 8.5M5.63604 18.364C4.82089 17.5488 4.16138 16.578 3.70591 15.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkCircleDashed);
+export default ForwardRef;

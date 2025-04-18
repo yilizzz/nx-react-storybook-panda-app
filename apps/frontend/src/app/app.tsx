@@ -3,16 +3,15 @@
 import './app.module.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import { css } from '../../styled-system/css';
-import { Text } from '@packages/ui';
+import { Text, Icon } from '@packages/ui';
+import { NkAArrowDown } from '../../../../packages/icons/src/components';
 export function App() {
   return (
     <div>
       <Text variant="sectionTitle">I am Text</Text>
       <div className={css({ bg: 'secondaryLight' })}>i am pandacssed</div>
+      <Icon as={NkAArrowDown} size="lg" />
 
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
       <br />
       <hr />
       <br />

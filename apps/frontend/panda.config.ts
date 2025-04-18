@@ -1,5 +1,4 @@
 import { defineConfig } from '@pandacss/dev';
-import { sharedTheme } from '../../panda.shared.config';
 import pandaConfig from '@packages/ui/panda.config.ts';
 
 export default defineConfig({
@@ -26,7 +25,6 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     extend: {
-      //...sharedTheme,
       ...pandaConfig.theme?.extend,
       // Add main project-specific theme extensions if needed
     },

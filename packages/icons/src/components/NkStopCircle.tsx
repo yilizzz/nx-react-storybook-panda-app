@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkStopCircle = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="stop-circle"><path id="Vector" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M9.5 12C9.5 10.8215 9.5 10.2322 9.86612 9.86612C10.2322 9.5 10.8215 9.5 12 9.5C13.1785 9.5 13.7678 9.5 14.1339 9.86612C14.5 10.2322 14.5 10.8215 14.5 12C14.5 13.1785 14.5 13.7678 14.1339 14.1339C13.7678 14.5 13.1785 14.5 12 14.5C10.8215 14.5 10.2322 14.5 9.86612 14.1339C9.5 13.7678 9.5 13.1785 9.5 12Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkStopCircle);
+export default ForwardRef;

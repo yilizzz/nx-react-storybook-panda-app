@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBrandTelegram = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="brand-telegram"><path id="Vector" d="M20 5L4.67223 11.3732C4.27728 11.5374 4.0798 11.6195 4.02909 11.727C3.98518 11.8201 3.99128 11.9287 4.04534 12.0165C4.10777 12.1178 4.31322 12.1779 4.72413 12.2981L10.5 14M20 5L17.9354 18.0485C17.8951 18.303 17.875 18.4303 17.8083 18.4997C17.7501 18.5604 17.6694 18.5951 17.5848 18.5958C17.4878 18.5965 17.3798 18.5243 17.1636 18.38L14.2349 16.4236M20 5L10.5 14M10.5 14L10.6556 18.3006C10.6556 18.6343 10.6556 18.8011 10.7246 18.8855C10.7846 18.959 10.8754 19.0012 10.971 19C11.0809 18.9986 11.2112 18.8923 11.4716 18.6796L14.2349 16.4236M10.5 14L14.2349 16.4236" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBrandTelegram);
+export default ForwardRef;

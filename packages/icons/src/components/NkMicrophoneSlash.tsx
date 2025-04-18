@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkMicrophoneSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="microphone-slash"><path id="Vector" d="M12 18V21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M8 21H16" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M8 11.5714V6.42857C8 4.53502 9.79086 3 12 3C13.3086 3 14.4704 3.5386 15.2002 4.37127M5 11C5 12.0463 5.22955 13.039 5.64103 13.9304M19 11C19 14.866 15.866 18 12 18C10.3217 18 8.7813 17.4094 7.57542 16.4246M3 21L7.57542 16.4246M21 3L16 8M16 8V11.5714C16 13.465 14.2091 15 12 15C11.1229 15 10.3117 14.758 9.65233 14.3477M16 8L9.65233 14.3477M9.65233 14.3477L7.57542 16.4246" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkMicrophoneSlash);
+export default ForwardRef;

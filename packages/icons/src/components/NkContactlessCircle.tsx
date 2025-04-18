@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkContactlessCircle = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="contactless-circle"><path id="Vector" d="M8 9.98975C8.14748 10.6361 8.22538 11.309 8.22538 12.0001C8.22538 12.6912 8.14748 13.3641 8 14.0105M10.9754 8.42041C11.3003 9.55751 11.4744 10.7583 11.4744 11.9998C11.4744 13.2412 11.3003 14.442 10.9754 15.5792M14.2244 6.85938C14.7382 8.48113 15.0154 10.2082 15.0154 12C15.0154 13.7918 14.7382 15.5188 14.2244 17.1406" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkContactlessCircle);
+export default ForwardRef;

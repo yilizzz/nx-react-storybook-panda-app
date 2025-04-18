@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBatteryCharging = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="battery-charging"><path id="Vector" d="M14.5 7H18C18.5523 7 19 7.4477 19 8V16C19 16.5523 18.5523 17 18 17H14.5M7.5 7H4C3.44771 7 3 7.4477 3 8V16C3 16.5523 3.44771 17 4 17H7.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M21 11V13" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M11.001 7L8.5 12.0006H13.502L11 17" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBatteryCharging);
+export default ForwardRef;

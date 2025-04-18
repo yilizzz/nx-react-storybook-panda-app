@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkFileText = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="file-text"><path id="Vector" d="M9.47796 3H7.25C6.00736 3 5 4.00736 5 5.25V18.75C5 19.9926 6.00736 21 7.25 21H16.25C17.4926 21 18.5 19.9926 18.5 18.75V12M9.47796 3C10.7206 3 11.75 4.00736 11.75 5.25V7.5C11.75 8.74264 12.7574 9.75 14 9.75H16.25C17.4926 9.75 18.5 10.7574 18.5 12M9.47796 3C13.1679 3 18.5 8.3597 18.5 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M9 16.5H15" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M9 13.5H13" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkFileText);
+export default ForwardRef;

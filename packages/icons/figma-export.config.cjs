@@ -7,8 +7,8 @@ module.exports = {
     [
       'components',
       {
-        fileId: 'uieSRIGXJvQxTi0w44FxnV',
-        onlyFromPages: ['ICON'],
+        fileId: '1tfR4z9YmhMoPQgNxauj8i',
+        onlyFromPages: ['Page 1'],
         filterComponent: (component) => {
           return !component.name.includes('=');
         },
@@ -29,8 +29,8 @@ module.exports = {
                 color: 'currentColor',
               },
               replaceAttrValues: {
-                black: 'var(--primary-color)',
-                white: 'var(--secondary-color)',
+                black: 'currentColor',
+                white: ' #ffffff',
               },
               jsx: {
                 babelConfig: {

@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkAirConditioner = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="air-conditioner"><path id="Vector" d="M18.3462 4.5H5.65385C5.02539 4.5 4.5 5.02539 4.5 5.65385V11.4231C4.5 12.0515 5.02539 12.5769 5.65385 12.5769H18.3462C18.9746 12.5769 19.5 12.0515 19.5 11.4231V5.65385C19.5 5.02539 18.9746 4.5 18.3462 4.5Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M16.6153 12.5769V10.2692C16.6153 9.64074 16.0899 9.11536 15.4615 9.11536H8.53839C7.90993 9.11536 7.38454 9.64074 7.38454 10.2692V12.5769M6.80762 18.3461C8.44804 18.3461 8.53839 16.7429 8.53839 15.4615M17.1922 18.3461C15.5518 18.3461 15.4615 16.7429 15.4615 15.4615M11.9999 19.5V15.4615" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkAirConditioner);
+export default ForwardRef;

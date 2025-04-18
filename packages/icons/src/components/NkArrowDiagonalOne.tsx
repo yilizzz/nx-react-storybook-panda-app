@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkArrowDiagonalOne = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="arrow-diagonal-one"><path id="Vector" d="M4.92896 12.7071L12.7071 4.92896M12.7071 4.92896L12.7071 9.8787M12.7071 4.92896L7.75738 4.92896" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M19.0711 11.2928L11.2929 19.071M11.2929 19.071L16.2427 19.071M11.2929 19.071L11.2929 14.1213" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkArrowDiagonalOne);
+export default ForwardRef;

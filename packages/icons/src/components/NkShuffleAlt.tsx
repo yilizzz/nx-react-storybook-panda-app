@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkShuffleAlt = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="shuffle-alt"><path id="Vector" d="M19 16.7646L21 18.8823L19 20.9999" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M19 3L21 5.11765L19 7.23529" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M21 5.11768H17.85C14.6191 5.11768 12 8.19901 12 12C12 15.801 14.6191 18.8824 17.85 18.8824H21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_4" d="M3 18.8824H6.15C9.38086 18.8824 12 15.801 12 12C12 8.19901 9.38086 5.11768 6.15 5.11768H3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkShuffleAlt);
+export default ForwardRef;

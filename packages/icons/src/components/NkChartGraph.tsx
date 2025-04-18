@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkChartGraph = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="chart-graph"><path id="Vector" d="M3 15.5002V17.3C3 18.4201 3 18.9798 3.21799 19.4076C3.40973 19.7839 3.71547 20.0905 4.0918 20.2822C4.5192 20.5 5.07899 20.5 6.19691 20.5H21.0002M3 15.5002V3.5M3 15.5002L6.85658 12.2865C8.49066 10.9248 9.56477 11.0649 10.9758 12.4759L10.9822 12.4823C12.5196 14.0197 13.6222 13.9556 15.1543 12.615L21 7.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkChartGraph);
+export default ForwardRef;

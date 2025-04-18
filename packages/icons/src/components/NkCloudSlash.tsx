@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkCloudSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="cloud-slash"><path id="Vector" d="M2.875 21L5.66775 18.2072M20.875 3L15.3429 8.53207M15.3429 8.53207C15.6165 9.06812 15.846 9.67684 16.0223 10.3632C20.064 10.3632 23.9561 14.5926 20.2778 17.747C19.3682 18.527 18.0331 18.75 16.8722 18.75H8.0263C7.19904 18.75 6.39396 18.5602 5.66775 18.2072M15.3429 8.53207L5.66775 18.2072M3.23981 16C-1.30719 9.54224 7.7282 3.00031 12.9994 6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkCloudSlash);
+export default ForwardRef;

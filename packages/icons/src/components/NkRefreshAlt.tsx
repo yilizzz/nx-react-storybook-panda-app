@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkRefreshAlt = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="refresh-alt"><path id="Vector" d="M3.5 8C4.89231 4.82137 8.32259 3 12.0223 3C16.7007 3 20.5473 6.55201 21 11.1" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M7.51124 8.3999H3.54146C3.24246 8.3999 3.00012 8.15814 3.00012 7.8599V3.8999" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M20.5001 15.9999C19.1078 19.1785 15.6775 20.9999 11.9778 20.9999C7.29949 20.9999 3.45277 17.4479 3.00012 12.8999" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_4" d="M16.4889 15.6001H20.4587C20.7576 15.6001 21 15.8418 21 16.1401V20.1001" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkRefreshAlt);
+export default ForwardRef;

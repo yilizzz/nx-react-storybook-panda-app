@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkCupcake = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="cupcake"><path id="Vector" d="M4.99992 14L5.80367 19.6263C5.948 20.6366 6.30756 21 7.38524 21H9.99996M4.99992 14H8.99996M4.99992 14C3.69683 13.3956 3 11.7637 3 10.3335C3 8.79807 4.02938 7.48314 5.49019 6.93701C5.80292 6.8201 5.99996 6.51809 5.99996 6.2085C5.99996 4.94284 7.11925 3.9165 8.49996 3.9165C9.16787 3.9165 9.80969 4.23873 10.4414 3.85059C11.3159 3.31321 12.368 3 13.5 3C16.5375 3 19 5.25723 19 8.04167C19 9.29823 21 9.63609 21 11.2502C21 12.5275 20.2877 13.6908 19 14M19 14H15M19 14L18.1961 19.6276C18.0438 20.6933 17.6349 21 16.6147 21H14M15 14H8.99996M15 14L14 21M8.99996 14L9.99996 21M9.99996 21H14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkCupcake);
+export default ForwardRef;
