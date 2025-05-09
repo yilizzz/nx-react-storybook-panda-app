@@ -12,9 +12,15 @@ interface ButtonProps extends ButtonVariantProps {
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, variant, iconLeft, iconRight, ...rest }, ref) => {
+  (
+    { children, variant, iconLeft, iconRight, size, shape, square, ...rest },
+    ref
+  ) => {
     const generatedClassName = button({
       variant,
+      size,
+      shape,
+      square,
     });
     return (
       <Box ref={ref} {...rest} className={generatedClassName}>

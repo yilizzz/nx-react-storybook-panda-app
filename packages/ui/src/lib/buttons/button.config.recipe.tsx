@@ -8,8 +8,7 @@ export const buttonRecipe = defineRecipe({
     borderStyle: 'solid',
     borderWidth: '1px',
     display: 'inline-block',
-    paddingX: '6',
-    paddingY: '4',
+    transition: 'color 0.3s, background-color 0.3s, border-color 0.3s',
     cursor: 'pointer',
   },
   variants: {
@@ -60,14 +59,19 @@ export const buttonRecipe = defineRecipe({
       },
     },
     size: {
-      default: { fontSize: '16px' },
-      lg: { fontSize: '24px' },
+      default: { paddingX: '6', paddingY: '4', fontSize: 'body1' },
+      lg: { paddingX: '6', paddingY: '4', fontSize: 'h5' },
     },
     shape: {
-      square: { borderRadius: 'none' },
       normal: { borderRadius: 'sm' },
       rounded: { borderRadius: 'lg' },
       circle: { borderRadius: 'full' },
+    },
+    square: {
+      true: {
+        paddingX: '4',
+        paddingY: '4',
+      },
     },
   },
 

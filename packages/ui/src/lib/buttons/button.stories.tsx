@@ -30,7 +30,7 @@ export const secondarySizeLg: Story = {
     size: 'lg',
   }),
   render: (args) => (
-    <Button {...args} iconLeft={NkAeroplane}>
+    <Button {...args} size="lg" iconLeft={NkAeroplane}>
       text
     </Button>
   ),
@@ -42,18 +42,27 @@ export const outlinePrimary: Story = {
   }),
   render: (args) => <Button {...args}>text</Button>,
 };
-export const outlineSecondary: Story = {
+export const outlineSecondaryRounded: Story = {
   args: button.raw({
     variant: 'outlineSecondary',
+    shape: 'rounded',
   }),
   render: (args) => <Button {...args}>text</Button>,
 };
 
-export const iconPrimary: Story = {
+export const circlePrimary: Story = {
   args: button.raw({
-    variant: 'primary',
+    shape: 'circle',
   }),
   render: (args) => (
-    <Button {...args} iconLeft={NkAeroplane} shape={'square'}></Button>
+    <Button {...args} iconLeft={NkAeroplane} shape={'circle'} square></Button>
   ),
+};
+
+export const squareOutlineSecondary: Story = {
+  args: button.raw({
+    variant: 'outlineSecondary',
+    square: true,
+  }),
+  render: (args) => <Button {...args} iconLeft={NkAeroplane}></Button>,
 };
