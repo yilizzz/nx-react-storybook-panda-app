@@ -1,0 +1,30 @@
+import React, { ElementType, forwardRef } from 'react';
+import {
+  button,
+  type ButtonVariantProps,
+} from '../../../styled-system/recipes';
+import { Group, Box } from '../../../styled-system/jsx';
+import { Icon } from '../typography/icon/icon';
+interface ButtonProps extends ButtonVariantProps {
+  children: React.ReactNode;
+  iconLeft?: ElementType;
+  iconRight?: ElementType;
+}
+
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ children, variant, iconLeft, iconRight, ...rest }, ref) => {
+    const generatedClassName = button({
+      variant,
+    });
+    return (
+      <Box ref={ref} {...rest} className={generatedClassName}>
+        <Group>
+          {iconLeft && <Icon as={iconLeft} />}
+          {children}
+          {iconRight && <Icon as={iconRight} />}
+        </Group>
+      </Box>
+    );
+  }
+);
+Button.displayName = 'Button';
