@@ -9,22 +9,17 @@ interface IconProps extends IconVariantProps {
   as?: ElementType;
   className?: string;
   size?: number;
-  color?: 'primary' | 'secondary' | 'white' | 'danger' | 'success';
 }
 
 export const Icon = forwardRef<HTMLSpanElement, IconProps>(
-  ({ as: IconComponent, className, size = 16, color, ...props }, ref) => {
+  ({ as: IconComponent, className, size = 16, ...props }, ref) => {
     if (!IconComponent) return null;
 
-    const classes = cx(
-      icon({
-        color,
-      })
-    );
+    const classes = cx(icon({}));
 
     const styleObj: React.CSSProperties = {
       ...{ width: `${size}px`, height: `${size}px` },
-      ...(color ? { color } : {}),
+      // ...(color ? { color } : {}),
     };
 
     return (

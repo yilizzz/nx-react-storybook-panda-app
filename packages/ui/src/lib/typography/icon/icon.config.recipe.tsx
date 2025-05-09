@@ -8,28 +8,8 @@ export const iconRecipe = defineRecipe({
     flexShrink: 0,
     color: 'currentColor',
   },
-  variants: {
-    color: {
-      primary: {
-        color: 'primary',
-      },
-      secondary: {
-        color: 'secondary',
-      },
-      white: {
-        color: 'textWhite',
-      },
-      danger: {
-        color: 'danger',
-      },
-      success: {
-        color: 'success',
-      },
-    },
-  },
+  variants: {},
 
-  defaultVariants: {
-    color: 'primary',
-  },
+  defaultVariants: {},
   jsx: ['Icon'],
 });

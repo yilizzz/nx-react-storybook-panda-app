@@ -1,7 +1,7 @@
 import { defineConfig } from '@pandacss/dev';
 import { textRecipe } from './src/lib/typography/text/text.config.recipe';
-import { iconRecipe } from 'src/ui/lib/typography/icon/icon.config.recipe';
-//import { iconRecipe } from './src/lib/typography/icon/icon.config.recipe';
+//import { iconRecipe } from 'src/ui/lib/typography/icon/icon.config.recipe';
+import { iconRecipe } from './src/lib/typography/icon/icon.config.recipe';
 export default defineConfig({
   globalCss: {
     ':root': {},
@@ -60,6 +60,7 @@ export default defineConfig({
         },
         radii: {
           none: { value: '0' },
+          sm: { value: '8px' },
           md: { value: '12px' },
           lg: { value: '24px' },
           full: { value: '999px' },
@@ -115,6 +116,171 @@ export default defineConfig({
         text: textRecipe,
         icon: iconRecipe,
       },
+    },
+  },
+  patterns: {
+    extend: {
+      group: {
+        description: 'A horizontal stack',
+        defaultValues: {
+          display: 'flex',
+          width: 'full',
+          gap: '3',
+        },
+        properties: {
+          justify: {
+            type: 'property',
+            value: 'justifyContent',
+          },
+          align: {
+            type: 'property',
+            value: 'alignItems',
+          },
+          direction: {
+            type: 'property',
+            value: 'flexDirection',
+          },
+          rowGap: {
+            type: 'property',
+            value: 'rowGap',
+          },
+          columnGap: {
+            type: 'property',
+            value: 'columnGap',
+          },
+          wrap: {
+            type: 'boolean',
+          },
+        },
+        blocklist: [],
+        transform(props) {
+          const {
+            direction = 'row',
+            justify = 'flex-start',
+            align = 'center',
+            rowGap = '3',
+            columnGap = '3',
+            wrap = false,
+            asChild,
+            ...rest
+          } = props;
+          if (wrap) {
+            return {
+              flexWrap: 'wrap',
+              ...rest,
+            };
+          }
+          return {
+            display: 'flex',
+            flexDirection: direction,
+            justifyContent: justify,
+            alignItems: align,
+            rowGap: rowGap,
+            columnGap: columnGap,
+            ...rest,
+          };
+        },
+      },
+      stack: {
+        description: 'A vertical stack',
+        defaultValues: { display: 'flex', width: 'full', gap: '3' },
+        properties: {
+          justify: {
+            type: 'property',
+            value: 'alignItems',
+          },
+          align: {
+            type: 'property',
+            value: 'justifyContent',
+          },
+          direction: {
+            type: 'property',
+            value: 'flexDirection',
+          },
+          rowGap: {
+            type: 'property',
+            value: 'rowGap',
+          },
+          columnGap: {
+            type: 'property',
+            value: 'columnGap',
+          },
+        },
+        blocklist: [],
+        transform(props) {
+          const {
+            direction = 'column',
+            justify = 'flex-start',
+            align = 'center',
+            rowGap = '3',
+            columnGap = '3',
+            ...rest
+          } = props;
+          return {
+            display: 'flex',
+            flexDirection: direction,
+            justifyContent: align,
+            alignItems: justify,
+            rowGap: rowGap,
+            columnGap: columnGap,
+            ...rest,
+          };
+        },
+      },
+      position: {
+        description: 'A div positioned',
+        defaultValues: {
+          position: 'relative',
+        },
+        properties: {
+          position: {
+            type: 'enum',
+            value: ['absolute', 'static', 'fixed', 'sticky', 'relative'],
+          },
+        },
+        blocklist: [],
+        transform(props) {
+          const { position, ...rest } = props;
+          return {
+            position: position,
+            ...rest,
+          };
+        },
+      },
+      /*  container: {
+        description: "A custom container",
+        defaultValues: {
+          position: "relative",
+          maxWidth: "full",
+          marginX: "auto",
+        },
+        properties: {
+          fluid: {
+            type: "boolean",
+          },
+        },
+        blocklist: [],
+        transform(props) {
+          const { fluid, ...rest } = props;
+
+          if (fluid) {
+            return { width: "full", ...rest };
+          }
+          return {
+            width: {
+              xs2: "300px",
+              xs: "450px",
+              sm: "580px",
+              md: "720px",
+              lg: "948px",
+              xl: "1184px",
+              xl2: "1416px",
+              xl3: "1580px",
+            },
+            ...rest,
+          };
+        },
+      }, */
     },
   },
 
