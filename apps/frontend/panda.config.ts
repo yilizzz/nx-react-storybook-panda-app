@@ -1,6 +1,6 @@
 import { defineConfig } from '@pandacss/dev';
 import pandaConfig from '@packages/ui/panda.config.ts';
-
+import { animationStyles } from './animation-styles';
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
@@ -27,9 +27,12 @@ export default defineConfig({
     extend: {
       ...pandaConfig.theme?.extend,
       // Add main project-specific theme extensions if needed
+      animationStyles,
     },
   },
-
+  patterns: {
+    ...pandaConfig.patterns,
+  },
   // The output directory for your css system
   outdir: 'styled-system',
 });

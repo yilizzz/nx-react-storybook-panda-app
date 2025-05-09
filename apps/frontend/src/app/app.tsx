@@ -3,15 +3,32 @@
 import './app.module.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import { css } from '../../styled-system/css';
-import { Text, Icon } from '@packages/ui';
-import { NkAArrowDown } from '../../../../packages/icons/src/components';
+import { Text, Button } from '@packages/ui';
+import { NkAArrowDown } from '@packages/icons';
+import { InsightCard } from './components/insight-card';
+import { Group } from '../../styled-system/jsx';
 export function App() {
   return (
     <div>
       <Text variant="sectionTitle">I am Text</Text>
-      <div className={css({ bg: 'secondaryLight' })}>i am pandacssed</div>
-      <Icon as={NkAArrowDown} size="lg" />
-
+      <div className={css({ bg: 'secondary' })}>i am pandacssed</div>
+      <Button iconLeft={NkAArrowDown}>button</Button>
+      <Group>
+        <InsightCard
+          title={
+            'Lorem ipsum dolor sit amet consectetur. At est id viverra morbi arcu commodo. Fermentum facilisi et integer nulla amet. '
+          }
+          content={
+            'Lorem ipsum dolor sit amet consectetur. At est id viverra morbi arcu commodo. Fermentum facilisi et integer nulla amet. Phasellus dignissim imperdiet consequat egestas. Duis integer nibh nunc rhoncus porttitor elit ut viverra. Eget lorem ornare aliquet nibh mattis.'
+          }
+        />
+        <InsightCard
+          title={
+            ' At est id viverra morbi arcu commodo. Fermentum facilisi et integer nulla amet. '
+          }
+          content={'Lorem ipsum dolor sit amet consectetur.'}
+        />
+      </Group>
       <br />
       <hr />
       <br />

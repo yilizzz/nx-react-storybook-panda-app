@@ -3,6 +3,7 @@ import { textRecipe } from './src/lib/typography/text/text.config.recipe';
 //import { iconRecipe } from 'src/ui/lib/typography/icon/icon.config.recipe';
 import { iconRecipe } from './src/lib/typography/icon/icon.config.recipe';
 import { buttonRecipe } from './src/lib/buttons/button.config.recipe';
+import { cardRecipe } from './src/lib/data-display/card/card.config.recipe';
 export default defineConfig({
   globalCss: {
     ':root': {},
@@ -71,6 +72,9 @@ export default defineConfig({
             value: '1770px',
           },
         },
+        shadows: {
+          elevated: { value: '0 4px 4px  #0000001A' },
+        },
         spacing: {},
         colors: {
           'primary.900': { value: '#01112C' },
@@ -117,6 +121,7 @@ export default defineConfig({
         text: textRecipe,
         icon: iconRecipe,
         button: buttonRecipe,
+        card: cardRecipe,
       },
     },
   },
@@ -249,40 +254,6 @@ export default defineConfig({
           };
         },
       },
-      /*  container: {
-        description: "A custom container",
-        defaultValues: {
-          position: "relative",
-          maxWidth: "full",
-          marginX: "auto",
-        },
-        properties: {
-          fluid: {
-            type: "boolean",
-          },
-        },
-        blocklist: [],
-        transform(props) {
-          const { fluid, ...rest } = props;
-
-          if (fluid) {
-            return { width: "full", ...rest };
-          }
-          return {
-            width: {
-              xs2: "300px",
-              xs: "450px",
-              sm: "580px",
-              md: "720px",
-              lg: "948px",
-              xl: "1184px",
-              xl2: "1416px",
-              xl3: "1580px",
-            },
-            ...rest,
-          };
-        },
-      }, */
     },
   },
 
