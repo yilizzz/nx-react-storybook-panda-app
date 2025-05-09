@@ -12,7 +12,7 @@ interface IconProps extends IconVariantProps {
 }
 
 export const Icon = forwardRef<HTMLSpanElement, IconProps>(
-  ({ as: IconComponent, className, size = 16, ...props }, ref) => {
+  ({ as: IconComponent, className, size = 24, ...props }, ref) => {
     if (!IconComponent) return null;
 
     const classes = cx(icon({}));
