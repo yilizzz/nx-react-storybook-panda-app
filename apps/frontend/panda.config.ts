@@ -27,7 +27,6 @@ export default defineConfig({
     extend: {
       ...pandaConfig.theme?.extend,
       // Add main project-specific theme extensions if needed
-      animationStyles,
     },
   },
   patterns: {

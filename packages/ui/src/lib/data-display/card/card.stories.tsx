@@ -4,7 +4,7 @@ import { card } from '@packages/ui/styled-system/recipes';
 import p from '@packages/ui/src/assets/p.png';
 const meta: Meta<typeof Card> = {
   component: Card,
-  title: 'Buttons/Card',
+  title: 'Data-display/Card',
 };
 export default meta;
 type Story = StoryObj<typeof Card>;

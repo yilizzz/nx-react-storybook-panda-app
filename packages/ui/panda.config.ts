@@ -4,6 +4,10 @@ import { textRecipe } from './src/lib/typography/text/text.config.recipe';
 import { iconRecipe } from './src/lib/typography/icon/icon.config.recipe';
 import { buttonRecipe } from './src/lib/buttons/button.config.recipe';
 import { cardRecipe } from './src/lib/data-display/card/card.config.recipe';
+import {
+  cardFlipRecipe,
+  cardFaceStyles,
+} from './src/lib/data-display/card-flip/card-flip.config.recipe';
 export default defineConfig({
   globalCss: {
     ':root': {},
@@ -122,6 +126,8 @@ export default defineConfig({
         icon: iconRecipe,
         button: buttonRecipe,
         card: cardRecipe,
+        cardFlip: cardFlipRecipe,
+        cardFace: cardFaceStyles,
       },
     },
   },

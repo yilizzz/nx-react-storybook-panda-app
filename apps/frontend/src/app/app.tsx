@@ -3,32 +3,72 @@
 import './app.module.css';
 import { Route, Routes, Link } from 'react-router-dom';
 import { css } from '../../styled-system/css';
-import { Text, Button } from '@packages/ui';
+import { Text, Button, CardFlip } from '@packages/ui';
 import { NkAArrowDown } from '@packages/icons';
-import { InsightCard } from './components/insight-card';
-import { Group } from '../../styled-system/jsx';
+import { Center, Grid, GridItem } from '@packages/ui/styled-system/jsx';
+import p1 from '@packages/ui/src/assets/p.png';
+import p2 from '@packages/ui/src/assets/p-inverse.png';
+import { InsightCardContent } from '@apps/frontend/app/components/insight-card-content';
 export function App() {
+  const content = {
+    title: 'Energy Transition Project and technology evolution',
+    content: 'Energy Transition Project and technology evolution',
+    date: '24/04',
+    type: 'webinar',
+    author: 'Jean-Charles ',
+    position: 'Chairman of the Boat',
+    duration: '10',
+  };
   return (
     <div>
       <Text variant="sectionTitle">I am Text</Text>
       <div className={css({ bg: 'secondary' })}>i am pandacssed</div>
       <Button iconLeft={NkAArrowDown}>button</Button>
-      <Group>
-        <InsightCard
-          title={
-            'Lorem ipsum dolor sit amet consectetur. At est id viverra morbi arcu commodo. Fermentum facilisi et integer nulla amet. '
-          }
-          content={
-            'Lorem ipsum dolor sit amet consectetur. At est id viverra morbi arcu commodo. Fermentum facilisi et integer nulla amet. Phasellus dignissim imperdiet consequat egestas. Duis integer nibh nunc rhoncus porttitor elit ut viverra. Eget lorem ornare aliquet nibh mattis.'
-          }
-        />
-        <InsightCard
-          title={
-            ' At est id viverra morbi arcu commodo. Fermentum facilisi et integer nulla amet. '
-          }
-          content={'Lorem ipsum dolor sit amet consectetur.'}
-        />
-      </Group>
+      <Grid w="full" columns={2}>
+        <GridItem h="full">
+          <CardFlip
+            frontContent={
+              <Center>
+                <InsightCardContent
+                  title={content.title}
+                  content={content.content}
+                  date={content.date}
+                  type={content.type}
+                  author={content.author}
+                  position={content.position}
+                  duration={content.duration}
+                />
+              </Center>
+            }
+            backContent={
+              <Center>
+                {' '}
+                <InsightCardContent
+                  title={content.title}
+                  content={content.content}
+                  date={content.date}
+                  type={content.type}
+                  author={content.author}
+                  position={content.position}
+                  duration={content.duration}
+                  face="back"
+                />
+              </Center>
+            }
+            frontBgImage={p1}
+            backBgImage={p2}
+          />
+        </GridItem>{' '}
+        <GridItem h="full">
+          <CardFlip
+            frontContent={<Center>front</Center>}
+            backContent={<Center>back</Center>}
+            frontBgImage={p1}
+            backBgImage={p2}
+          />
+        </GridItem>
+      </Grid>
+
       <br />
       <hr />
       <br />
