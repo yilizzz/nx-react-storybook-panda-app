@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Card } from './card';
 import { card } from '@packages/ui/styled-system/recipes';
 import p from '@packages/ui/src/assets/p.png';
+import { Text } from '@packages/ui/src/lib/typography/text/text';
 const meta: Meta<typeof Card> = {
   component: Card,
   title: 'Data-display/Card',
@@ -32,6 +33,39 @@ export const background: Story = {
   render: (args) => (
     <Card {...args} style={{ backgroundImage: `url("${p}")` }}>
       Grow their business pipeline / Takes orders
+    </Card>
+  ),
+};
+
+export const primary: Story = {
+  args: card.raw({
+    variant: 'primary',
+  }),
+  render: (args) => (
+    <Card {...args}>
+      <Text color="white">Grow their business pipeline / Takes orders</Text>
+    </Card>
+  ),
+};
+
+export const secondary: Story = {
+  args: card.raw({
+    variant: 'secondary',
+  }),
+  render: (args) => (
+    <Card {...args}>
+      <Text color="white">Grow their business pipeline / Takes orders</Text>
+    </Card>
+  ),
+};
+
+export const elevatedAlt: Story = {
+  args: card.raw({
+    variant: 'elevatedAlt',
+  }),
+  render: (args) => (
+    <Card {...args}>
+      <Text>Grow their business pipeline / Takes orders</Text>
     </Card>
   ),
 };

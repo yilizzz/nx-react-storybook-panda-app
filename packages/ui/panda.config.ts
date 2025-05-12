@@ -78,6 +78,7 @@ export default defineConfig({
         },
         shadows: {
           elevated: { value: '0 4px 4px  #0000001A' },
+          elevatedAlt: { value: '0 0 12px  #00000040' },
         },
         spacing: {},
         colors: {
