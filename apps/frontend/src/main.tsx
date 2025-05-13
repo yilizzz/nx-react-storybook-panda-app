@@ -11,7 +11,6 @@ root.render(
   <StrictMode>
     <BrowserRouter>
       <App />
-      ccdd
     </BrowserRouter>
   </StrictMode>
 );

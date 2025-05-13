@@ -31,7 +31,7 @@ export const background: Story = {
     variant: 'background',
   }),
   render: (args) => (
-    <Card {...args} style={{ backgroundImage: `url("${p}")` }}>
+    <Card {...args} backgroundImage={p}>
       Grow their business pipeline / Takes orders
     </Card>
   ),

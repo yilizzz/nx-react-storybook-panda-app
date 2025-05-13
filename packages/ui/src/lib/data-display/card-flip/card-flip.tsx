@@ -37,14 +37,14 @@ export const CardFlip = ({
             ? `url("${frontBgImage}")`
             : `url("${backBgImage}")`,
         }}
-      ></div>
-      <Position w="full" h="full">
+      >
         {isHovered ? (
           <Box css={{ transform: 'rotateY(180deg)' }}>{backContent}</Box>
         ) : (
-          frontContent
+          <Box>{frontContent}</Box>
         )}
-      </Position>
+      </div>
+
       {/*  <div
         className={frontFaceStyles}
         style={{

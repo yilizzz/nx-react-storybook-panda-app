@@ -2,38 +2,24 @@ import { Stack, Box } from '@packages/ui/styled-system/jsx';
 import React from 'react';
 export const InsightCardContent: React.FC<
   {
-    title: string;
-    content: string;
-    date: string;
-    type: string;
-    author: string;
-    position: string;
-    duration: string;
+    content: object;
     face: 'front' | 'back';
   } & React.HTMLAttributes<HTMLDivElement>
-> = ({
-  title,
-  content,
-  date,
-  type,
-  author,
-  position,
-  duration,
-  face = 'front',
-  ...props
-}) => {
+> = ({ content, face = 'front', ...props }) => {
   return (
-    <Stack {...props}>
-      <Box>{title}</Box>
+    <Stack {...props} color="white">
+      <Box>{content.title}</Box>
 
-      <Box>{date}</Box>
-      <Box>{type}</Box>
+      <Box>{content.date}</Box>
+      <Box>{content.type}</Box>
 
-      <Box>{author}</Box>
-      <Box>{position}</Box>
+      <Box>{content.author}</Box>
+      <Box>{content.position}</Box>
 
-      <Box>{duration}</Box>
-      <Box color={face === 'front' ? 'transparent' : 'unset'}>{content}</Box>
+      <Box>{content.duration}</Box>
+      <Box color={face === 'front' ? 'transparent' : 'unset'}>
+        {content.content}
+      </Box>
     </Stack>
   );
 };

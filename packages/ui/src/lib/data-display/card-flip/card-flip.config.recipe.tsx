@@ -23,16 +23,6 @@ export const cardFlipRecipe = defineRecipe({
     flipped: true,
   },
   jsx: ['CardFlip'],
-  props: {
-    frontBgImage: {
-      type: 'string',
-      description: 'Background image for the front face',
-    },
-    backBgImage: {
-      type: 'string',
-      description: 'Background image for the back face',
-    },
-  },
 });
 
 export const cardFaceStyles = defineRecipe({

@@ -61,9 +61,11 @@
     "@figma-export/output-components-as-svgr": "^4.4.0",
     "autoprefixer": "^10.4.21",
     "env-cmd": "^10.1.0",
+    "motion": "^12.11.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-router-dom": "6.29.0"
+    "react-router-dom": "6.29.0",
+    "swiper": "^11.2.6"
   },
   "workspaces": [
     "apps/*",

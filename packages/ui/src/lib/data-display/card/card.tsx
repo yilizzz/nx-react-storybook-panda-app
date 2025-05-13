@@ -6,24 +6,24 @@ import {
 import { Position } from '@packages/ui/styled-system/jsx';
 interface CardProps extends CardVariantProps {
   children: React.ReactNode;
-  background?: React.ReactNode;
+  backgroundImage?: string;
 }
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ children, variant, background, ...rest }, ref) => {
+  ({ children, variant, backgroundImage, ...rest }, ref) => {
     const generatedClassName = card({
       variant,
     });
     return (
-      <div ref={ref} {...rest} className={generatedClassName}>
-        {background && (
-          <Position position={'absolute'} w="full" h="full">
-            {background}
-          </Position>
-        )}
-        <Position w="full" h="full">
-          {children}
-        </Position>
+      <div
+        ref={ref}
+        {...rest}
+        className={generatedClassName}
+        style={{
+          backgroundImage: backgroundImage ? `url("${backgroundImage}")` : ``,
+        }}
+      >
+        {children}
       </div>
     );
   }

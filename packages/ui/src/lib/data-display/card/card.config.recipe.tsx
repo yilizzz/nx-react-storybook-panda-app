@@ -24,18 +24,17 @@ export const cardRecipe = defineRecipe({
         padding: '5',
       },
       background: {
-        paddingX: '6',
-        paddingY: '9',
+        padding: '6',
         borderRadius: 'lg',
       },
       primary: {
         background: 'primary.900',
-        padding: '5',
+        padding: '6',
         borderRadius: 'lg',
       },
       secondary: {
         background: 'secondary',
-        padding: '5',
+        padding: '6',
         borderRadius: 'lg',
       },
       elevatedAlt: {
