@@ -48,7 +48,6 @@ export const textRecipe = defineRecipe({
         },
       },
       sectionTitle: {
-        color: 'primary',
         fontWeight: 'bold',
         sm: {
           fontSize: 'h3',
@@ -203,6 +202,7 @@ export const textRecipe = defineRecipe({
 
   defaultVariants: {
     variant: 'default',
+    color: 'primary',
   },
   jsx: ['Text'],
 });

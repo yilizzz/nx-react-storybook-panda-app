@@ -4,6 +4,8 @@ import { textRecipe } from './src/lib/typography/text/text.config.recipe';
 import { iconRecipe } from './src/lib/typography/icon/icon.config.recipe';
 import { buttonRecipe } from './src/lib/buttons/button.config.recipe';
 import { cardRecipe } from './src/lib/data-display/card/card.config.recipe';
+import { pillRecipe } from './src/lib/data-display/pill/pill.config.recipe';
+import { cardInfoRecipe } from './src/lib/data-display/card-info/card-info.config.recipe';
 import {
   cardFlipRecipe,
   cardFaceStyles,
@@ -129,6 +131,8 @@ export default defineConfig({
         card: cardRecipe,
         cardFlip: cardFlipRecipe,
         cardFace: cardFaceStyles,
+        cardInfo: cardInfoRecipe,
+        pill: pillRecipe,
       },
     },
   },

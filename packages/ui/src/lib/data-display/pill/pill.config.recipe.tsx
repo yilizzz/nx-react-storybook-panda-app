@@ -9,13 +9,24 @@ export const pillRecipe = defineRecipe({
   },
   variants: {
     variant: {
-      default: {},
-      round: {},
-      square: {},
-      squareAlt: {},
+      default: {
+        background: '#307A9D40',
+        borderRadius: 'sm',
+        paddingX: '6',
+        paddingY: '2',
+      },
+      inverse: {
+        background: 'white',
+        borderRadius: 'sm',
+        paddingX: '6',
+        paddingY: '2',
+      },
+
+      square: { background: 'white', borderRadius: 'sm', padding: '4' },
+      squareAlt: { background: 'primary', borderRadius: 'sm', padding: '4' },
     },
   },
 
-  defaultVariants: {},
-  jsx: ['Icon'],
+  defaultVariants: { variant: 'default' },
+  jsx: ['Pill'],
 });

@@ -2,6 +2,7 @@ import { cardFlip, cardFace } from '@packages/ui/styled-system/recipes';
 import React, { useState } from 'react';
 import { Position, Box } from '@packages/ui/styled-system/jsx';
 import { Card } from '@packages/ui/src/lib/data-display/card/card';
+/*  xiao guo bu hao, bu yao yong */
 interface CardFlipProps {
   frontContent: React.ReactNode;
   backContent: React.ReactNode;
