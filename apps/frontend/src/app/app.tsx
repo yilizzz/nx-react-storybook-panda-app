@@ -10,6 +10,8 @@ import {
   GridItem,
   Stack,
   Container,
+  Group,
+  Box,
 } from '@packages/ui/styled-system/jsx';
 import p1 from '@packages/ui/src/assets/p.png';
 import p2 from '@packages/ui/src/assets/p-inverse.png';
@@ -31,43 +33,28 @@ export function App() {
       <Stack>
         <Text variant="sectionTitle">sectionTitle</Text>
         <Button iconLeft={NkAArrowDown}>button</Button>
-        {/*  CardFlip
-        <Grid w="full" h="full" columns={6}>
+        CardFlipMotion
+        <Box w="full" h={'full'} display={'inline-flex'}>
+          <CardFlipMotion
+            face={
+              <Card variant="background" backgroundImage={p1}>
+                <InsightCardContent content={content} />
+              </Card>
+            }
+            back={
+              <Card variant="background" backgroundImage={p2}>
+                <Box w="full" h="full">
+                  back
+                </Box>
+              </Card>
+            }
+          ></CardFlipMotion>
+        </Box>
+        something under it
+        <Grid columns={6} w="full" h="full">
           {[1, 2, 3, 4, 5].map((item, index) => {
             return (
               <GridItem w="full" h="full">
-                <CardFlip
-                  frontContent={
-                    <Center>
-                      <InsightCardContent content={content} />
-                    </Center>
-                  }
-                  backContent={
-                    <Center>
-                      {' '}
-                      <InsightCardContent content={content} face="back" />
-                    </Center>
-                  }
-                  frontBgImage={p1}
-                  backBgImage={p2}
-                />
-              </GridItem>
-            );
-          })}
-          <GridItem w="full" h="full">
-            <CardFlip
-              frontContent={<Center>front</Center>}
-              backContent={<Center>back</Center>}
-              frontBgImage={p1}
-              backBgImage={p2}
-            />
-          </GridItem>
-        </Grid> */}
-        CardFlipMotion
-        <Grid w="full" h="full" columns={6}>
-          {[1, 2, 3, 4, 5].map((item, index) => {
-            return (
-              <GridItem h="full">
                 <CardFlipMotion
                   face={
                     <Card variant="background" backgroundImage={p1}>
@@ -79,23 +66,25 @@ export function App() {
                       <InsightCardContent content={content} face="back" />
                     </Card>
                   }
-                ></CardFlipMotion>
+                />
               </GridItem>
             );
           })}
-          <GridItem h="full" w="full">
+          <GridItem w="full" h="full">
             <CardFlipMotion
               face={
                 <Card variant="background" backgroundImage={p1}>
-                  front
+                  front sectionTitle
                 </Card>
               }
               back={
                 <Card variant="background" backgroundImage={p2}>
-                  back
+                  <Box w="full" h="full">
+                    back
+                  </Box>
                 </Card>
               }
-            ></CardFlipMotion>
+            />
           </GridItem>
         </Grid>
         <br />

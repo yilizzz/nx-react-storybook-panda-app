@@ -8,6 +8,8 @@ export const cardRecipe = defineRecipe({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
+    width: '100%',
+    height: '100%',
   },
   variants: {
     variant: {

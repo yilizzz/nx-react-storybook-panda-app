@@ -16,28 +16,34 @@ export const CardFlipMotion: React.FC<
       {...props}
       style={{
         cursor: 'pointer',
-        position: 'relative',
+        display: 'flex',
+        width: '100%',
+        height: '100%',
       }}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
     >
       <motion.div
         style={{
+          display: isFlipped ? 'none' : 'flex',
           backfaceVisibility: 'hidden',
-          position: 'absolute',
+          width: '100%',
+          height: '100%',
         }}
         animate={{ rotateY: isFlipped ? 180 : 0 }}
       >
-        <Box>{face}</Box>
+        {face}
       </motion.div>
       <motion.div
         style={{
           backfaceVisibility: 'hidden',
-          position: 'absolute',
+          display: isFlipped ? 'inline' : 'none',
+          width: '100%',
+          height: '100%',
         }}
         animate={{ rotateY: isFlipped ? 0 : 180 }}
       >
-        <Box>{back}</Box>
+        {back}
       </motion.div>
     </div>
   );
