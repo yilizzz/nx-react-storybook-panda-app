@@ -47,7 +47,16 @@ export const primary: Story = {
     </Card>
   ),
 };
-
+export const primaryAlt: Story = {
+  args: card.raw({
+    variant: 'primaryAlt',
+  }),
+  render: (args) => (
+    <Card {...args}>
+      <Text color="white">Grow their business pipeline / Takes orders</Text>
+    </Card>
+  ),
+};
 export const secondary: Story = {
   args: card.raw({
     variant: 'secondary',

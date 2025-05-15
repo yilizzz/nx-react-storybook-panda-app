@@ -6,10 +6,8 @@ import { buttonRecipe } from './src/lib/buttons/button.config.recipe';
 import { cardRecipe } from './src/lib/data-display/card/card.config.recipe';
 import { pillRecipe } from './src/lib/data-display/pill/pill.config.recipe';
 import { cardInfoRecipe } from './src/lib/data-display/card-info/card-info.config.recipe';
-import {
-  cardFlipRecipe,
-  cardFaceStyles,
-} from './src/lib/data-display/card-flip/card-flip.config.recipe';
+import { imageRecipe } from './src/lib/data-display/image/image.config.recipe';
+import { cardDecoRecipe } from './src/lib/data-display/card-deco/card-deco.config.recipe';
 export default defineConfig({
   globalCss: {
     ':root': {},
@@ -71,6 +69,7 @@ export default defineConfig({
           sm: { value: '8px' },
           md: { value: '12px' },
           lg: { value: '24px' },
+          xl: { value: '40px' },
           full: { value: '999px' },
         },
         sizes: {
@@ -129,10 +128,10 @@ export default defineConfig({
         icon: iconRecipe,
         button: buttonRecipe,
         card: cardRecipe,
-        cardFlip: cardFlipRecipe,
-        cardFace: cardFaceStyles,
         cardInfo: cardInfoRecipe,
+        cardDeco: cardDecoRecipe,
         pill: pillRecipe,
+        image: imageRecipe,
       },
     },
   },

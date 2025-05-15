@@ -2,7 +2,7 @@
 // import styles from './app.module.css';
 import './app.module.css';
 import { Route, Routes, Link } from 'react-router-dom';
-import { Text, Button, CardFlip, Card } from '@packages/ui';
+import { Text, Button, Card, CardFlip } from '@packages/ui';
 import { NkAArrowDown } from '@packages/icons';
 import {
   Center,
@@ -16,8 +16,7 @@ import {
 import p1 from '@packages/ui/src/assets/p.png';
 import p2 from '@packages/ui/src/assets/p-inverse.png';
 import { InsightCardContent } from '@apps/frontend/app/components/insight-card-content';
-import { CardFlipMotion } from '@apps/frontend/app/components/card-flip-motion';
-import { css } from '../../styled-system/css';
+
 export function App() {
   const content = {
     title: 'Energy Transition Project and technology evolution',
@@ -33,29 +32,11 @@ export function App() {
       <Stack>
         <Text variant="sectionTitle">sectionTitle</Text>
         <Button iconLeft={NkAArrowDown}>button</Button>
-        CardFlipMotion
-        <Box w="full" h={'full'} display={'inline-flex'}>
-          <CardFlipMotion
-            face={
-              <Card variant="background" backgroundImage={p1}>
-                <InsightCardContent content={content} />
-              </Card>
-            }
-            back={
-              <Card variant="background" backgroundImage={p2}>
-                <Box w="full" h="full">
-                  back
-                </Box>
-              </Card>
-            }
-          ></CardFlipMotion>
-        </Box>
-        something under it
         <Grid columns={6} w="full" h="full">
           {[1, 2, 3, 4, 5].map((item, index) => {
             return (
               <GridItem w="full" h="full">
-                <CardFlipMotion
+                <CardFlip
                   face={
                     <Card variant="background" backgroundImage={p1}>
                       <InsightCardContent content={content} />
@@ -71,7 +52,7 @@ export function App() {
             );
           })}
           <GridItem w="full" h="full">
-            <CardFlipMotion
+            <CardFlip
               face={
                 <Card variant="background" backgroundImage={p1}>
                   front sectionTitle

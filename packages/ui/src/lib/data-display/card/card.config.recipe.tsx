@@ -34,6 +34,11 @@ export const cardRecipe = defineRecipe({
         padding: '6',
         borderRadius: 'lg',
       },
+      primaryAlt: {
+        background: 'primary.500',
+        padding: '6',
+        borderRadius: 'lg',
+      },
       secondary: {
         background: 'secondary',
         padding: '6',

@@ -6,23 +6,24 @@ export const cardInfoRecipe = defineSlotRecipe({
   slots: ['root', 'image', 'info'],
   base: {
     root: {
-      borderRadius: 'lg',
-    },
-    image: {
-      borderTopLeftRadius: 'lg',
-      borderTopRightRadius: 'lg',
-      /*  backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
       width: '100%',
       height: '100%',
-      display: 'flex', */
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '0',
+      borderRadius: 'lg',
+      overflow: 'hidden',
+    },
+    image: {
+      width: '100%',
+      height: '70%',
+      maxHeight: '300px',
     },
     info: {
       background: 'primary',
       padding: '6',
-      borderBottomLeftRadius: 'lg',
-      borderBottomRightRadius: 'lg',
+      width: '100%',
+      height: '30%',
     },
   },
   variants: {},

@@ -3,7 +3,7 @@ import {
   card,
   type CardVariantProps,
 } from '@packages/ui/styled-system/recipes';
-import { Position } from '@packages/ui/styled-system/jsx';
+
 interface CardProps extends CardVariantProps {
   children: React.ReactNode;
   backgroundImage?: string;

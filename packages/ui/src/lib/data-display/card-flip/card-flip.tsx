@@ -1,69 +1,50 @@
-import { cardFlip, cardFace } from '@packages/ui/styled-system/recipes';
-import React, { useState } from 'react';
-import { Position, Box } from '@packages/ui/styled-system/jsx';
-import { Card } from '@packages/ui/src/lib/data-display/card/card';
-/*  xiao guo bu hao, bu yao yong */
-interface CardFlipProps {
-  frontContent: React.ReactNode;
-  backContent: React.ReactNode;
-  frontBgImage?: string;
-  backBgImage?: string;
-  width: string;
-  height: string;
-}
+import { Stack, Box, Position } from '@packages/ui/styled-system/jsx';
+import React, { ReactNode, useState } from 'react';
 
-export const CardFlip = ({
-  frontContent,
-  backContent,
-  frontBgImage,
-  backBgImage,
-  ...props
-}: CardFlipProps) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const flipStyles = cardFlip({ flipped: isHovered });
-  const frontFaceStyles = cardFace({ face: 'front' });
-  const backFaceStyles = cardFace({ face: 'back' });
+import { motion } from 'framer-motion';
+
+export const CardFlip: React.FC<
+  {
+    face: ReactNode;
+    back: ReactNode;
+  } & React.HTMLAttributes<HTMLDivElement>
+> = ({ face, back, ...props }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
 
   return (
     <div
-      className={flipStyles}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       {...props}
+      style={{
+        cursor: 'pointer',
+        display: 'flex',
+        width: '100%',
+        height: '100%',
+      }}
+      onMouseEnter={() => setIsFlipped(true)}
+      onMouseLeave={() => setIsFlipped(false)}
     >
-      <div
-        className={isHovered ? backFaceStyles : frontFaceStyles}
+      <motion.div
         style={{
-          backgroundImage: isHovered
-            ? `url("${frontBgImage}")`
-            : `url("${backBgImage}")`,
+          display: isFlipped ? 'none' : 'flex',
+          backfaceVisibility: 'hidden',
+          width: '100%',
+          height: '100%',
         }}
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
       >
-        {isHovered ? (
-          <Box css={{ transform: 'rotateY(180deg)' }}>{backContent}</Box>
-        ) : (
-          <Box>{frontContent}</Box>
-        )}
-      </div>
-
-      {/*  <div
-        className={frontFaceStyles}
+        {face}
+      </motion.div>
+      <motion.div
         style={{
-          backgroundImage: frontBgImage ? `url("${frontBgImage}")` : undefined,
+          backfaceVisibility: 'hidden',
+          display: isFlipped ? 'inline' : 'none',
+          width: '100%',
+          height: '100%',
         }}
+        animate={{ rotateY: isFlipped ? 0 : 180 }}
       >
-        {frontContent}
-      </div>
-      <div
-        className={backFaceStyles}
-        style={{
-          backgroundImage: backBgImage ? `url("${backBgImage}")` : undefined,
-        }}
-      >
-        <Position w="full" h="full">
-          {backContent}
-        </Position>
-      </div> */}
+        {back}
+      </motion.div>
     </div>
   );
 };
