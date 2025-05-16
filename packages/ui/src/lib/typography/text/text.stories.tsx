@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Text } from './text';
-import { text } from '../../../../styled-system/recipes';
+import { text } from '@styled-system/ui/recipes';
 
 const meta: Meta<typeof Text> = {
   component: Text,

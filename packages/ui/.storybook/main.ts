@@ -1,9 +1,11 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 import { mergeConfig } from 'vite';
+const path = require('path');
+const tsconfigPaths = require('vite-tsconfig-paths');
 const config: StorybookConfig = {
   //stories: ['../src/lib/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  viteFinal(config) {
+  /*  viteFinal(config) {
     return mergeConfig(config, {
       resolve: {
         alias: {
@@ -11,6 +13,12 @@ const config: StorybookConfig = {
         },
       },
     });
+  }, */
+  async viteFinal(config) {
+    return {
+      ...config,
+      plugins: [...(config.plugins || []), tsconfigPaths.default()],
+    };
   },
   addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],
   framework: {
