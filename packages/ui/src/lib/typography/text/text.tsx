@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { text, type TextVariantProps } from '../../../../styled-system/recipes';
+import { text, type TextVariantProps } from '@styled-system/ui/recipes';
 
 interface TextProps extends TextVariantProps {
   children: React.ReactNode;

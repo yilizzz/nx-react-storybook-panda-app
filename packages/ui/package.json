@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@pandacss/dev": "^0.53.3"
+    "@pandacss/dev": "^0.53.3",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",

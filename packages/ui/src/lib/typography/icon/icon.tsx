@@ -1,34 +1,33 @@
-import { forwardRef, type ElementType } from 'react';
-import { cx } from '../../../../styled-system/css';
-import {
-  icon,
-  type IconVariantProps,
-} from '@packages/ui/styled-system/recipes';
-
+import { forwardRef, ElementType } from 'react';
+import { css, cx } from '@styled-system/ui/css';
+import { IconVariantProps, icon } from '@styled-system/ui/recipes';
+import { splitCssProps, styled } from '@styled-system/ui/jsx';
+import type { HTMLStyledProps } from '@styled-system/ui/types';
 interface IconProps extends IconVariantProps {
   as?: ElementType;
   className?: string;
-  size?: number;
+  size?: number | string;
+  [key: string]: any; // To allow passthrough of other HTML attributes
 }
 
-export const Icon = forwardRef<HTMLSpanElement, IconProps>(
-  ({ as: IconComponent, className, size = 24, ...props }, ref) => {
-    if (!IconComponent) return null;
+export const Icon = forwardRef<HTMLElement, IconProps>(
+  ({ as: As, className: userClassName, size = '24px', ...props }, ref) => {
+    const [cssProps, restProps] = splitCssProps(props);
+    const { css: cssProp, ...styleProps } = cssProps;
 
-    const classes = cx(icon({}));
+    const pandaClassName = css(styleProps, cssProp);
 
-    const styleObj: React.CSSProperties = {
-      ...{ width: `${size}px`, height: `${size}px` },
-      // ...(color ? { color } : {}),
-    };
+    const combinedClassName = userClassName
+      ? `${pandaClassName} ${userClassName}`
+      : pandaClassName;
 
     return (
-      <IconComponent
+      <As
         ref={ref}
-        className={classes}
-        style={styleObj}
-        {...props}
-      ></IconComponent>
+        {...restProps}
+        className={combinedClassName}
+        style={{ width: size, height: size }}
+      />
     );
   }
 );
