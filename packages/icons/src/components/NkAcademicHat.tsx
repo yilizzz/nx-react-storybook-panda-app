@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkAcademicHat = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="academic-hat"><path id="Vector" d="M14.2173 3.49965C12.7963 2.83345 11.2038 2.83345 9.7828 3.49965L3.0916 6.63664C1.63613 7.31899 1.63614 9.68105 3.0916 10.3634L9.78272 13.5003C11.2037 14.1665 12.7962 14.1665 14.2172 13.5003L20.9084 10.3634C22.3639 9.68101 22.3639 7.31895 20.9084 6.63659L14.2173 3.49965Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M22 8.5V13.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M5 11.5V16.6254C5 19.5429 9.69412 21 12 21C14.3059 21 19 19.5429 19 16.6254V11.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkAcademicHat);
+export default ForwardRef;

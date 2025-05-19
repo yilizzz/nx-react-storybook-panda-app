@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkLetterSCircle = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="letter-s-circle"><path id="Vector" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M14.5 9.25V9C14.5 8.44772 14.0523 8 13.5 8H10.5C9.94772 8 9.5 8.44772 9.5 9V9.98445C9.5 10.5978 9.87343 11.1494 10.4429 11.3772L13.5571 12.6228C14.1266 12.8506 14.5 13.4022 14.5 14.0155V15C14.5 15.5523 14.0523 16 13.5 16H10.5C9.94772 16 9.5 15.5523 9.5 15V14.75" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkLetterSCircle);
+export default ForwardRef;

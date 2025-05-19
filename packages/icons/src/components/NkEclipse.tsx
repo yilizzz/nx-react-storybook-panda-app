@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkEclipse = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="eclipse"><path id="Vector" d="M10.1834 3.18342C6.08365 4.0237 3 7.65174 3 12C3 16.9706 7.02944 21 12 21C16.3483 21 19.9763 17.9164 20.8166 13.8166M10.1834 3.18342C10.7702 3.06316 11.3777 3 12 3C16.9706 3 21 7.02944 21 12C21 12.6223 20.9368 13.2298 20.8166 13.8166M10.1834 3.18342C8.91518 9.37119 14.7155 15.0671 20.8166 13.8166" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkEclipse);
+export default ForwardRef;

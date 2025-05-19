@@ -1,0 +1,16 @@
+{
+  "name": "@packages/icons",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "figma-export": "npx env-cmd npx figma-export use-config ./figma-export.config.cjs"
+  }
+}

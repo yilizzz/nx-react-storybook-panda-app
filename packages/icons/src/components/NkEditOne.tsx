@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkEditOne = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="edit-one"><path id="Vector" d="M9.53289 11.1498C9.19166 11.4915 9 11.9547 9 12.4376V15H11.5781C12.0614 15 12.525 14.8079 12.8667 14.466L20.4666 6.86172C21.1778 6.15014 21.1778 4.99678 20.4666 4.28521L19.7159 3.53401C19.0041 2.82181 17.8496 2.82202 17.1381 3.5345L9.53289 11.1498Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkEditOne);
+export default ForwardRef;

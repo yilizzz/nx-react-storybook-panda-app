@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkTelephoneSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="telephone-slash"><path id="Vector" d="M10.6836 13.3164L21 3M10.6836 13.3164C12.2139 14.872 14.3851 15.8003 15.6002 14.5215C16.9344 13.1172 18.6747 14.5587 19.9425 15.2882C22.4781 16.7472 19.9383 20.7393 17.7277 20.9574C14.071 21.3182 10.3525 19.3515 7.56529 16.4347M10.6836 13.3164L7.56529 16.4347M3 21L7.56529 16.4347M5.5 13.8449C4.05262 11.6517 3.12603 9.21128 3.00277 6.91545C2.88792 4.77641 6.66945 1.41378 8.39201 3.84935C9.30984 5.14708 10.968 6.91263 9.50016 8.45754C9.007 8.97658 8.87206 9.6439 8.98981 10.3551" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkTelephoneSlash);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkExclude = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="exclude"><path id="Vector" d="M8.4 15.6H6C4.34315 15.6 3 14.2569 3 12.6V6C3 4.34314 4.34315 3 6 3H12.6C14.2569 3 15.6 4.34315 15.6 6V8.4M8.4 15.6V18C8.4 19.6569 9.74314 21 11.4 21H18C19.6569 21 21 19.6569 21 18V11.4C21 9.74315 19.6569 8.4 18 8.4H15.6M8.4 15.6V13.8M8.4 15.6H10.2M15.6 8.4H13.8M15.6 8.4V10.2M8.4 10.2C8.4 9.20589 9.20589 8.4 10.2 8.4M15.6 13.8C15.6 14.7941 14.7941 15.6 13.8 15.6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkExclude);
+export default ForwardRef;

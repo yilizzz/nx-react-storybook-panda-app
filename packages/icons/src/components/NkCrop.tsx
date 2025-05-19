@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkCrop = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="crop"><path id="Vector" d="M6.6001 3V12.6C6.6001 14.2802 6.6001 15.1202 6.92708 15.762C7.2147 16.3265 7.67364 16.7854 8.23813 17.073C8.87986 17.4 9.71994 17.4 11.4001 17.4H21.0001" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M9.19995 6.59998H12.5999C14.2801 6.59998 15.1202 6.59998 15.7619 6.92696C16.3264 7.21458 16.7854 7.67352 17.073 8.238C17.4 8.87974 17.4 9.71982 17.4 11.4V14.8" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M6.6 6.59998H3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_4" d="M17.3999 21V17.4" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkCrop);
+export default ForwardRef;

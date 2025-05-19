@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBookmarkUser = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="bookmark-user"><path id="Vector" d="M7.52722 20.8411C6.86106 21.2736 6 20.7723 6 19.9521V3.94163C6 3.42158 6.33579 3 6.75 3H17.25C17.6642 3 18 3.42158 18 3.94163V19.9521C18 20.7723 17.1389 21.2736 16.4728 20.8411L12.5272 18.2799C12.2043 18.0702 11.7957 18.0702 11.4728 18.2799L7.52722 20.8411Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M15 14C15 10.1388 9 10.1388 9 14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBookmarkUser);
+export default ForwardRef;

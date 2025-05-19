@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkCalendarSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="calendar-slash"><path id="Vector" d="M7.5 5V3M3.25 8H11M20.75 8H16M14.6 4H9.4C7.15979 4 6.03968 4 5.18404 4.41175C4.43139 4.77394 3.81947 5.35187 3.43597 6.0627C3 6.87081 3 7.92869 3 10.0444V14.9556C3 15.7826 3 16.448 3.02604 17M3 21L4.13829 19.8617M21 3L19.3078 4.69218M19.3078 4.69218C19.8358 5.04441 20.268 5.51395 20.564 6.0627C21 6.87081 21 7.92869 21 10.0444V14.9556C21 17.0713 21 18.1292 20.564 18.9373C20.1805 19.6481 19.5686 20.2261 18.816 20.5882C17.9603 21 16.8402 21 14.6 21H9.4C7.15979 21 6.03968 21 5.18404 20.5882C4.79348 20.4003 4.44081 20.1543 4.13829 19.8617M19.3078 4.69218L16 8M16 8L4.13829 19.8617" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkCalendarSlash);
+export default ForwardRef;

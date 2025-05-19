@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBank = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="bank"><path id="Vector" d="M12 8.94059V18M17 8.94059V18M7 8.94059V18M12.4472 3.10627L20.2111 7.01386C21.155 7.48888 20.8192 8.92079 19.7639 8.92079H4.23607C3.18084 8.92079 2.84503 7.48889 3.78885 7.01386L11.5528 3.10627C11.8343 2.96458 12.1657 2.96458 12.4472 3.10627ZM19.5 21H4.50001C3.67158 21 3 20.3284 3 19.5C3 18.6716 3.67158 18 4.50001 18H19.5C20.3284 18 21 18.6716 21 19.5C21 20.3284 20.3284 21 19.5 21Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBank);
+export default ForwardRef;

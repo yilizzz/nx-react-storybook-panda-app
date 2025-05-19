@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkMagnet = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="magnet"><path id="Vector" d="M3 7.5V12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12V7.5M3 7.5V5C3 3.89543 3.89543 3 5 3H6.625C7.72957 3 8.625 3.89543 8.625 5V7.5M3 7.5H8.625M8.625 7.5V12C8.625 13.864 10.136 15.375 12 15.375C13.864 15.375 15.375 13.864 15.375 12V7.5M15.375 7.5V5C15.375 3.89543 16.2704 3 17.375 3H19C20.1046 3 21 3.89543 21 5V7.5M15.375 7.5H21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkMagnet);
+export default ForwardRef;

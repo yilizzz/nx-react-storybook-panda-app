@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkTrashOne = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="trash-one"><path id="Vector" d="M18 7L17.1136 17.3416C17.0029 18.6324 16.9476 19.2778 16.6608 19.7662C16.4081 20.1963 16.0327 20.5409 15.5826 20.7559C15.0715 21 14.4237 21 13.1282 21H10.8718C9.57627 21 8.92849 21 8.41741 20.7559C7.96734 20.5409 7.59186 20.1963 7.33925 19.7662C7.05238 19.2778 6.99706 18.6324 6.88642 17.3416L6 7" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M4.5 6.5H9.11539M9.11539 6.5L9.50112 3.82848C9.61348 3.34157 10.0173 3 10.4806 3H13.5194C13.9827 3 14.3865 3.34158 14.4989 3.82848L14.8846 6.5M9.11539 6.5H14.8846M14.8846 6.5H19.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkTrashOne);
+export default ForwardRef;

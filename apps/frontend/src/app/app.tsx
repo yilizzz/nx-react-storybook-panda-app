@@ -1,20 +1,27 @@
 // Uncomment this line to use CSS modules
 // import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
 import './app.module.css';
 import { Route, Routes, Link } from 'react-router-dom';
-import { Ui } from '@packages/ui';
-import { css } from '../../styled-system/css';
+import { css } from '@styled-system/frontend/css';
+import { Text, Icon } from '@packages/ui';
+import { NkAArrowDown } from '@packages/icons';
 export function App() {
   return (
     <div>
-      <Ui />
-      <div className={css({ bg: 'secondaryLight' })}>i am pandacssed</div>
-      <NxWelcome title="frontend" />
+      <Text variant="sectionTitle">I am Text</Text>
+      <div className={css({ bg: 'secondary' })}>i am pandacssed</div>
+      <Icon
+        as={NkAArrowDown}
+        size={120}
+        color="secondary"
+        opacity={0.5}
+        borderColor={'primary'}
+        borderStyle={'solid'}
+        borderWidth={1}
+        borderRadius={'full'}
+        boxShadow={'12px 12px 2px 1px rgba(0, 0, 255, 0.2)'}
+      />
 
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
       <br />
       <hr />
       <br />

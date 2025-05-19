@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkEar = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="ear"><path id="Vector" d="M7.55523 16.4594C7.55523 18.1393 8.41429 19.5 9.97017 19.5C11.5261 19.5 12.7889 18.3598 13.1911 16.4594C13.9242 13.009 18.6869 12.167 16.8189 7.58185C14.7983 2.62233 6.75 3.89913 6.75 9.61812" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M9.5 14C9.96028 14 10.4212 13.7101 10.7954 13.382C11.3665 12.8813 11.4075 12.031 10.9895 11.3968C10.5819 10.7784 9.65328 10.2237 9.83308 9.37922C10.4278 6.58593 14.055 6.96958 14.2957 9.76244" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkEar);
+export default ForwardRef;

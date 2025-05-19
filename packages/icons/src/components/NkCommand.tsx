@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkCommand = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="command"><path id="Vector" d="M15.0115 5.97707V18.0229C15.0115 20.6679 18.3283 21.9765 20.1524 20.1524C21.9765 18.3283 20.6679 15.0115 18.0229 15.0115H5.97707C3.33209 15.0115 2.02355 18.3283 3.84765 20.1524C5.67175 21.9765 8.98854 20.6679 8.98854 18.0229V5.97707C8.98854 3.33209 5.67175 2.02355 3.84765 3.84765C2.02355 5.67175 3.33209 8.98854 5.97707 8.98854H18.0229C20.6679 8.98854 21.9765 5.67175 20.1524 3.84765C18.3283 2.02355 15.0115 3.33209 15.0115 5.97707Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkCommand);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkRectangleVertical = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="rectangle-vertical"><path id="Vector" d="M14.7 2C16.3802 2 17.2202 2 17.862 2.33909C18.4265 2.63736 18.8854 3.1133 19.173 3.6987C19.5 4.3642 19.5 5.23539 19.5 6.97778V17.0222C19.5 18.7646 19.5 19.6358 19.173 20.3013C18.8854 20.8867 18.4265 21.3626 17.862 21.6609C17.2202 22 16.3802 22 14.7 22H9.3C7.61984 22 6.77976 22 6.13803 21.6609C5.57354 21.3626 5.1146 20.8867 4.82698 20.3013C4.5 19.6358 4.5 18.7646 4.5 17.0222L4.5 6.97778C4.5 5.23539 4.5 4.3642 4.82698 3.6987C5.1146 3.1133 5.57354 2.63736 6.13803 2.33909C6.77976 2 7.61984 2 9.3 2L14.7 2Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkRectangleVertical);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkChartBubble = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="chart-bubble"><path id="Vector" d="M21 8.86328C21 10.244 19.8807 11.3633 18.5 11.3633C17.1193 11.3633 16 10.244 16 8.86328C16 7.48257 17.1193 6.36328 18.5 6.36328C19.8807 6.36328 21 7.48257 21 8.86328Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M13 8C13 10.7614 10.7614 13 8 13C5.23858 13 3 10.7614 3 8C3 5.23858 5.23858 3 8 3C10.7614 3 13 5.23858 13 8Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M18.9689 17.5C18.9689 19.433 17.4019 21 15.4689 21C13.5359 21 11.9689 19.433 11.9689 17.5C11.9689 15.567 13.5359 14 15.4689 14C17.4019 14 18.9689 15.567 18.9689 17.5Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkChartBubble);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkLockCircle = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="lock-circle"><path id="Vector" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M14.0042 10.9465V8.92508C14.0042 6.28385 9.99576 6.43386 9.99576 8.92508V10.9465M9.00212 10.9465H14.9979C15.5513 10.9465 16 11.399 16 11.9572V14.9893C16 15.5475 15.5513 16 14.9979 16H9.00212C8.44867 16 8 15.5475 8 14.9893V11.9572C8 11.399 8.44867 10.9465 9.00212 10.9465Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkLockCircle);
+export default ForwardRef;

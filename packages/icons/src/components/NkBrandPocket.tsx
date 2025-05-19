@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBrandPocket = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="brand-pocket"><path id="Vector" d="M9 10.25L12 13.25L15 10.25" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M4.8 3H19.2C19.6774 3 20.1352 3.19901 20.4728 3.55324C20.8104 3.90748 21 4.38792 21 4.88889V11.5556C21 14.0604 20.0518 16.4626 18.364 18.2338C16.6761 20.005 14.3869 21 12 21C10.8181 21 9.64778 20.7557 8.55585 20.2811C7.46392 19.8065 6.47177 19.1108 5.63604 18.2338C3.94821 16.4626 3 14.0604 3 11.5556V4.88889C3 4.38792 3.18964 3.90748 3.52721 3.55324C3.86477 3.19901 4.32261 3 4.8 3Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBrandPocket);
+export default ForwardRef;

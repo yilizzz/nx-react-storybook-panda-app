@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkVideoSlash = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="video-slash"><path id="Vector" d="M20.1675 6.99135L16.1675 10.5536C16.0609 10.6485 16 10.7843 16 10.927V12.7049C16 12.8475 16.0609 12.9834 16.1675 13.0783L20.1675 16.6405C20.4898 16.9276 21 16.6988 21 16.2671V7.36475C21 6.9331 20.4898 6.70428 20.1675 6.99135Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M3 15.75V8.25C3 7.14543 3.89543 6.25 5 6.25H13.5M3 21L6.25 17.75M21 3L15.5 8.5M15.5 8.5V15.75C15.5 16.8546 14.6046 17.75 13.5 17.75H6.25M15.5 8.5L6.25 17.75" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkVideoSlash);
+export default ForwardRef;

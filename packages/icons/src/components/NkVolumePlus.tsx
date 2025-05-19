@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkVolumePlus = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="volume-plus"><path id="Vector" d="M13 3V21C9.5 21 6.89925 16.4195 6.89925 16.4195C6.89925 16.4195 3 17.0061 3 15.4195V8.5054C3 6.91883 6.89925 7.5054 6.89925 7.5054C6.89925 7.5054 9.5 3 13 3Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M16 12H21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M18.5 9.5L18.5 14.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkVolumePlus);
+export default ForwardRef;

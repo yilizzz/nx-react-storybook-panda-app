@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkAirpods = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="airpods"><path id="Vector" d="M10 18V8C10 6.067 8.433 4.5 6.5 4.5C4.567 4.5 3 6.067 3 8C3 9.933 4.567 11.5 6.5 11.5C6.77423 11.4936 7 11.7141 7 11.9884V18C7 18.8284 7.67157 19.5 8.5 19.5C9.32843 19.5 10 18.8284 10 18Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M14 18V8C14 6.067 15.567 4.5 17.5 4.5C19.433 4.5 21 6.067 21 8C21 9.933 19.433 11.5 17.5 11.5C17.2258 11.4936 17 11.7141 17 11.9884V18C17 18.8284 16.3284 19.5 15.5 19.5C14.6716 19.5 14 18.8284 14 18Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkAirpods);
+export default ForwardRef;

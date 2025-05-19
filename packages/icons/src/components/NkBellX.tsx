@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBellX = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="bell-x"><path id="Vector" d="M10 8L14 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M14 8L10 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M15.0189 17H8.97991M15.0189 17H18.6327C20.5088 17 20.1918 15.1396 19.2425 14.1963C15.8248 10.8005 20.6796 2.99998 11.9994 3C3.31924 3.00002 8.174 10.8006 4.7562 14.1963C3.84255 15.104 3.45439 17 5.36613 17H8.97991M15.0189 17C15.0189 18.9255 14.371 21 11.9994 21C9.62781 21 8.97991 18.9255 8.97991 17" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBellX);
+export default ForwardRef;

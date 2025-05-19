@@ -1,0 +1,5 @@
+import * as React from "react";
+import { SVGProps, Ref, forwardRef } from "react";
+const NkBrandSpotify = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth={2} color="currentColor" ref={ref} {...props}><g id="brand-spotify"><path id="Vector" d="M8.72009 15.384C10.7384 14.584 12.9586 14.884 14.7751 16.084" stroke="currentColor" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_2" d="M7.81177 12.384C10.5365 11.384 13.5641 11.684 15.8852 13.384" stroke="currentColor" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_3" d="M6.5 9.28399C10.133 7.88399 14.2706 8.38399 17.5 10.584" stroke="currentColor" strokeMiterlimit={10} strokeLinecap="round" strokeLinejoin="round" /><path id="Vector_4" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" /></g></svg>;
+const ForwardRef = forwardRef(NkBrandSpotify);
+export default ForwardRef;
