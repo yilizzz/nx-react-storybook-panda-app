@@ -6,8 +6,9 @@ import { getRootExternal } from '../../utils/vite';
 import { resolve } from 'path';
 import autoprefixer from 'autoprefixer';
 import pandacss from '@pandacss/dev/postcss';
+import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tsconfigPaths()],
   css: {
     postcss: {
       plugins: [pandacss, autoprefixer],
