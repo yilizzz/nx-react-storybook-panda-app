@@ -15,20 +15,20 @@ export const Icon = forwardRef<HTMLElement, IconProps>(
     const [cssProps, restProps] = splitCssProps(props);
     const { css: cssProp, ...styleProps } = cssProps;
 
-    const pandaClassName = css(
-      {
-        width: size,
-        height: size,
-      },
-      styleProps,
-      cssProp
-    );
+    const pandaClassName = css(styleProps, cssProp);
 
     const combinedClassName = userClassName
       ? `${pandaClassName} ${userClassName}`
       : pandaClassName;
 
-    return <As ref={ref} {...restProps} className={combinedClassName} />;
+    return (
+      <As
+        ref={ref}
+        {...restProps}
+        className={combinedClassName}
+        style={{ width: size, height: size }}
+      />
+    );
   }
 );
 
