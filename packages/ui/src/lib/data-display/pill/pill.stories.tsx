@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Pill } from './pill';
-import { pill } from '@packages/ui/styled-system/recipes';
-import { Text } from '@packages/ui/src/lib/typography/text/text';
-import { Icon } from '../../../lib/typography/icon/icon';
-import { NkAeroplane } from '../../../../../icons/src';
+import { pill } from '@styled-system/ui/recipes';
+import { Text } from 'src/ui/lib/typography/text/text';
+import { NkAeroplane } from '@packages/icons';
 const meta: Meta<typeof Pill> = {
   component: Pill,
   title: 'Data-display/Pill',

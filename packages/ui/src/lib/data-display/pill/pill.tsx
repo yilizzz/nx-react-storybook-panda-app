@@ -1,10 +1,7 @@
 import React, { ElementType, forwardRef } from 'react';
-import {
-  pill,
-  type PillVariantProps,
-} from '@packages/ui/styled-system/recipes';
-import { Group } from '@packages/ui/styled-system/jsx';
-import { Icon } from '../../typography/icon/icon';
+import { pill, type PillVariantProps } from '@styled-system/ui/recipes';
+import { Group } from '@styled-system/ui/jsx';
+import { Icon } from 'src/ui/lib/typography/icon/icon';
 interface PillProps extends PillVariantProps {
   children: React.ReactNode;
   icon?: ElementType;

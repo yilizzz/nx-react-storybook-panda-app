@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { CardDeco } from './card-deco';
-import { cardDeco } from '@packages/ui/styled-system/recipes';
-import p from '@packages/ui/src/assets/p.png';
-import { Text } from '@packages/ui/src/lib/typography/text/text';
+import { cardDeco } from '@styled-system/ui/recipes';
+import p from 'src/ui/assets/p.png';
 const meta: Meta<typeof CardDeco> = {
   component: CardDeco,
   title: 'Data-display/CardDeco',

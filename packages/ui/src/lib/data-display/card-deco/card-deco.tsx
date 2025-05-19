@@ -1,9 +1,6 @@
 import React, { forwardRef } from 'react';
-import {
-  cardDeco,
-  type CardDecoVariantProps,
-} from '@packages/ui/styled-system/recipes';
-import { Position } from '@packages/ui/styled-system/jsx';
+import { cardDeco, type CardDecoVariantProps } from '@styled-system/ui/recipes';
+import { Position } from '@styled-system/ui/jsx';
 interface CardDecoProps extends CardDecoVariantProps {
   children: React.ReactNode;
   deco: string;

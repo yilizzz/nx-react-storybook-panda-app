@@ -1,7 +1,7 @@
 import React, { ElementType, forwardRef } from 'react';
 import { button, type ButtonVariantProps } from '@styled-system/ui/recipes';
 import { Group, Box } from '@styled-system/ui/jsx';
-import { Icon } from '@packages/ui/src/lib/typography/icon/icon';
+import { Icon } from 'src/ui/lib/typography/icon/icon';
 interface ButtonProps extends ButtonVariantProps {
   children: React.ReactNode;
   iconLeft?: ElementType;

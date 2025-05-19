@@ -1,8 +1,5 @@
 import React, { forwardRef } from 'react';
-import {
-  cardInfo,
-  type CardInfoVariantProps,
-} from '@packages/ui/styled-system/recipes';
+import { cardInfo, type CardInfoVariantProps } from '@styled-system/ui/recipes';
 
 interface CardInfoProps extends CardInfoVariantProps {
   children: React.ReactNode;

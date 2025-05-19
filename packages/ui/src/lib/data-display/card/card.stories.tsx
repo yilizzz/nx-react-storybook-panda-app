@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Card } from './card';
-import { card } from '@packages/ui/styled-system/recipes';
-import p from '@packages/ui/src/assets/p.png';
-import { Text } from '@packages/ui/src/lib/typography/text/text';
+import { card } from '@styled-system/ui/recipes';
+import p from 'src/ui/assets/p.png';
+import { Text } from 'src/ui/lib/typography/text/text';
 const meta: Meta<typeof Card> = {
   component: Card,
   title: 'Data-display/Card',
