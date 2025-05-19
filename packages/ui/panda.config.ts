@@ -2,6 +2,7 @@ import { defineConfig } from '@pandacss/dev';
 import { textRecipe } from './src/lib/typography/text/text.config.recipe';
 //import { iconRecipe } from 'src/ui/lib/typography/icon/icon.config.recipe';
 import { iconRecipe } from './src/lib/typography/icon/icon.config.recipe';
+import { buttonRecipe } from './src/lib/buttons/button.config.recipe';
 export default defineConfig({
   globalCss: {
     ':root': {},
@@ -115,6 +116,7 @@ export default defineConfig({
       recipes: {
         text: textRecipe,
         icon: iconRecipe,
+        button: buttonRecipe,
       },
     },
   },
