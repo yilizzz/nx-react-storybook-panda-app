@@ -1,8 +1,7 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.css';
-import './app.module.css';
 import { Route, Routes, Link } from 'react-router-dom';
-import { Text, Button, Card, CardFlip, Icon } from '@packages/ui';
+import { Text, Card, CardFlip, Icon, Image, Button } from '@packages/ui';
+//import { CardColor } from '@packages/ui';
+import { CardColor, cardStyles } from './components/card-color';
 import { NkAArrowDown } from '@packages/icons';
 import {
   Center,
@@ -16,7 +15,11 @@ import {
 import p1 from '@packages/ui/src/assets/p.png';
 import p2 from '@packages/ui/src/assets/p-inverse.png';
 import { InsightCardContent } from '@apps/frontend/app/components/insight-card-content';
-import { css } from '@styled-system/frontend/css';
+import { css, cva } from '@styled-system/frontend/css';
+import { useState } from 'react';
+import { token } from '@styled-system/frontend/tokens';
+import { styled } from '@styled-system/frontend/jsx';
+
 export function App() {
   const content = {
     title: 'Energy Transition Project and technology evolution',
@@ -27,11 +30,43 @@ export function App() {
     position: 'Chairman of the Boat',
     duration: '10',
   };
+  const [color, setColor] = useState('secondary');
+
   return (
-    <div>
-      <Text variant="sectionTitle">I am Text</Text>
-      <div className={css({ bg: 'secondaryLight' })}>i am pandacssed</div>
-      <Grid columns={6} w="full" h="full">
+    <Stack>
+      <Button
+        onClick={() => setColor(color === 'primary' ? 'secondary' : 'primary')}
+      >
+        color now : {color}
+      </Button>
+
+      <Button variant={color} shape={color === 'primary' ? 'circle' : 'normal'}>
+        Click me
+      </Button>
+      <CardColor
+        variant={color}
+        shape={color === 'primary' ? 'rounded' : 'normal'}
+      >
+        cva recipe front
+      </CardColor>
+      {/*  <CardColor variant={color}>cva recipe UI</CardColor> */}
+      <Box color={color}>Runtime conditions</Box>
+
+      <Box color={color}>
+        <Icon as={NkAArrowDown} size={color === 'primary' ? 120 : 24}></Icon>
+      </Box>
+
+      <Card variant={color}>
+        <Text color="white">card</Text>
+      </Card>
+      <Text variant={color === 'primary' ? 'sectionTitle' : 'headLine'}>
+        I am Text
+      </Text>
+      <Image
+        src={p1}
+        variant={color === 'primary' ? 'default' : 'pointed'}
+      ></Image>
+      {/*  <Grid columns={6} w="full" h="full">
         {[1, 2, 3, 4, 5].map((item, index) => {
           return (
             <GridItem w="full" h="full">
@@ -66,8 +101,7 @@ export function App() {
             }
           />
         </GridItem>
-      </Grid>
-
+      </Grid> */}
       <br />
       <hr />
       <br />
@@ -101,7 +135,7 @@ export function App() {
         />
       </Routes>
       {/* END: routes */}
-    </div>
+    </Stack>
   );
 }
 

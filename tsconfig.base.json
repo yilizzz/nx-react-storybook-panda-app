@@ -15,25 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-     /*  "@apps/frontend/*": ["apps/frontend/src/*"],
+      "@packages/icons": ["packages/icons/src/index.ts"],
+      "dist/icons/*": ["packages/icons/dist/*"],
+      "src/icons/*": ["packages/icons/src/*"],
       "@packages/ui": ["packages/ui/dist"],
-      "dist/ui/*": ["packages/ui/dist/*"],
-
+      "dist/ui/*": ["packages/ui/dist/*"], 
       "src/ui/*": ["packages/ui/src/*"],
-      "@packages/icons": ["packages/icons/src/index.ts"],
-      "dist/icons/*": ["packages/icons/dist/*"],
-      "src/icons/*": ["packages/icons/src/*"],
-      "@styled-system/ui/*":["packages/ui/styled-system/*"] */
-      
-      "@packages/icons": ["packages/icons/src/index.ts"],
-      "dist/ui/*": ["packages/ui/dist/*"],
-      "src/ui/*": ["packages/ui/src/*"],
-      "dist/icons/*": ["packages/icons/dist/*"],
-      "src/icons/*": ["packages/icons/src/*"],
       "@styled-system/ui/*": ["packages/ui/styled-system/*"],
-      "@styled-system/frontend/*": ["apps/frontend/styled-system/*"],
       "@apps/frontend/*": ["apps/frontend/src/*"],
-      "@packages/ui": ["packages/ui/dist"]
+      "@styled-system/frontend/*": ["apps/frontend/styled-system/*"],
+     
     }
   },
   "exclude": ["node_modules", "tmp"]

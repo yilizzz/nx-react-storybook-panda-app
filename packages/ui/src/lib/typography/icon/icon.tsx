@@ -20,12 +20,16 @@ export const Icon = forwardRef<HTMLElement, IconProps>(
     const combinedClassName = userClassName
       ? `${pandaClassName} ${userClassName}`
       : pandaClassName;
-
+    const generatedClassName = icon({
+      size,
+    });
     return (
       <As
         ref={ref}
         {...restProps}
         className={combinedClassName}
+        /* {...props}
+        className={generatedClassName} */
         style={{ width: size, height: size }}
       />
     );

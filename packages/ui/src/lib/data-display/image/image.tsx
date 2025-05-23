@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { image, type ImageVariantProps } from '@styled-system/ui/recipes';
 import { splitCssProps } from '@styled-system/ui/jsx';
-import { css } from '@styled-system/ui/css';
+import { css, cx } from '@styled-system/ui/css';
 interface ImageProps extends ImageVariantProps {
   src: string;
   alt?: string;
@@ -25,8 +25,11 @@ export const Image = forwardRef<HTMLImageElement, ImageProps>(
     const [cssProps, restProps] = splitCssProps(props);
     const { css: cssProp, ...styleProps } = cssProps;
 
-    const pandaClassName = css(image.raw({ variant }), styleProps, cssProp);
-
+    const pandaClassName = cx(
+      image({ variant }),
+      css(styleProps),
+      css(cssProp)
+    );
     const combinedClassName = userClassName
       ? `${pandaClassName} ${userClassName}`
       : pandaClassName;

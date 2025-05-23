@@ -17,7 +17,7 @@ export default defineConfig(() => ({
     host: 'localhost',
   },
   plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
-  /*  css: {
+  /*   css: {
     postcss: {
       plugins: [pandacss, autoprefixer],
     },
