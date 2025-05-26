@@ -4,15 +4,15 @@ import { Group, Box } from '@styled-system/ui/jsx';
 import { Icon } from 'src/ui/lib/typography/icon/icon';
 import { splitCssProps } from '@styled-system/ui/jsx';
 import { cx, css } from '@styled-system/ui/css';
-interface ButtonProps extends ButtonVariantProps {
+type ButtonProps = ButtonVariantProps & {
   children: React.ReactNode;
   iconLeft?: ElementType;
   iconRight?: ElementType;
-  className?: string;
-  [key: string]: any;
-}
+  /* className?: string;
+  [key: string]: any; */
+};
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const Button = forwardRef<HTMLDivElement, ButtonProps>(
   (
     {
       children,
@@ -22,7 +22,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       size,
       shape,
       square,
-      className: userClassName,
+      // className: userClassName,
       ...props
     },
     ref
@@ -35,9 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       css(styleProps),
       css(cssProp)
     );
-    const combinedClassName = userClassName
-      ? `${pandaClassName} ${userClassName}`
-      : pandaClassName;
+
     const generatedClassName = button({
       variant,
       size,
@@ -45,7 +43,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       square,
     });
     return (
-      <button ref={ref} {...restProps} className={combinedClassName}>
+      <button ref={ref} {...props} className={generatedClassName}>
         <Group>
           {iconLeft && <Icon as={iconLeft} />}
           {children}

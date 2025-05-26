@@ -6,24 +6,22 @@ export const pillRecipe = defineRecipe({
   base: {
     display: 'inline-block',
     flexShrink: 0,
+    borderRadius: 'sm',
   },
   variants: {
     variant: {
       default: {
         background: '#307A9D40',
-        borderRadius: 'sm',
         paddingX: '6',
         paddingY: '2',
       },
       inverse: {
         background: 'white',
-        borderRadius: 'sm',
         paddingX: '6',
         paddingY: '2',
       },
-
-      square: { background: 'white', borderRadius: 'sm', padding: '4' },
-      squareAlt: { background: 'primary', borderRadius: 'sm', padding: '4' },
+      square: { background: 'white', padding: '4' },
+      squareAlt: { background: 'primary', padding: '4' },
     },
   },
 

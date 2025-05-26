@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './button';
 import { button } from '@styled-system/ui/recipes';
 import { NkAeroplane, NkHeadphones } from '@packages/icons';
+import { useState } from 'react';
 const meta: Meta<typeof Button> = {
   component: Button,
   title: 'Buttons/Button',
@@ -11,7 +12,23 @@ type Story = StoryObj<typeof Button>;
 
 export const buttonDefault: Story = {
   args: button.raw({}),
-  render: (args) => <Button {...args}>text</Button>,
+  render: (args) => {
+    const [color, setColor] = useState('primary');
+    return (
+      <div>
+        <Button
+          onClick={() =>
+            setColor(color === 'primary' ? 'secondary' : 'primary')
+          }
+        >
+          dynamic props : {color}
+        </Button>
+        <Button {...args} variant={color}>
+          text
+        </Button>
+      </div>
+    );
+  },
 };
 
 export const primary: Story = {

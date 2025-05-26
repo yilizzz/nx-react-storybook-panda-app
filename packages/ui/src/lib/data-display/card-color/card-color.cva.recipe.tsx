@@ -4,50 +4,36 @@ import { styled } from '@styled-system/ui/jsx';
 export const cardStyles = cva({
   base: {
     display: 'inline-flex',
+    width: '100%',
+    height: '100%',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    width: '100%',
-    height: '100%',
   },
   variants: {
     variant: {
       neutral: {
-        background: 'neutral.100',
+        background: 'neutral.500',
         paddingX: '12',
         paddingY: '5',
         borderRadius: 'lg',
       },
       elevated: {
-        background: 'white',
+        background: 'neutral.100',
         borderRadius: 'md',
         boxShadow: 'elevated',
         padding: '5',
       },
-      background: {
-        padding: '6',
-        borderRadius: 'lg',
-      },
+
       primary: {
-        background: 'primary.900',
-        padding: '6',
-        borderRadius: 'lg',
-      },
-      primaryAlt: {
-        background: 'primary.500',
+        background: 'primary.300',
         padding: '6',
         borderRadius: 'lg',
       },
       secondary: {
-        background: 'secondary',
+        background: 'secondary.200',
         padding: '6',
         borderRadius: 'lg',
-      },
-      elevatedAlt: {
-        background: 'white',
-        padding: '12',
-        borderRadius: 'lg',
-        boxShadow: 'elevatedAlt',
       },
     },
   },

@@ -125,7 +125,7 @@ export default defineConfig({
       recipes: {
         text: textRecipe,
         icon: iconRecipe,
-        //card: cardRecipe,
+        card: cardRecipe,
         cardInfo: cardInfoRecipe,
         cardDeco: cardDecoRecipe,
         pill: pillRecipe,

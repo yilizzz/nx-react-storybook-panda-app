@@ -1,5 +1,15 @@
 import { Route, Routes, Link } from 'react-router-dom';
-import { Text, CardFlip, Icon, Image, Button, CardDeco } from '@packages/ui';
+import {
+  Text,
+  CardFlip,
+  Icon,
+  Image,
+  Button,
+  CardDeco,
+  CardInfo,
+  Pill,
+  CardColor,
+} from '@packages/ui';
 import { Card } from '@packages/ui';
 import { NkAArrowDown } from '@packages/icons';
 import {
@@ -36,31 +46,49 @@ export function App() {
       >
         color now : {color}
       </Button>
+      <CardColor variant={color === 'primary' ? 'secondary' : 'primary'}>
+        CardColor CVA
+      </CardColor>
+      <Card variant={color === 'primary' ? 'secondary' : 'primary'}>
+        <Text>card</Text>
+      </Card>
 
-      <Button variant={color} shape={color === 'primary' ? 'circle' : 'normal'}>
-        Click me
-      </Button>
-      <CardDeco deco={color === 'primary' ? p1 : p2}>CardDeco</CardDeco>
-
-      <Box color={color}>Runtime conditions</Box>
-
+      {/*  <Pill variant={color === 'primary' ? 'default' : 'inverse'}>pill</Pill>
+      <CardInfo image={color === 'primary' ? p1 : p2}>CardInfo</CardInfo>
+      <CardDeco
+        deco={color === 'primary' ? p1 : p2}
+        variant={color === 'primary' ? 'default' : 'neutral'}
+      >
+        CardDeco
+      </CardDeco>
+      <CardFlip
+        face={
+          <Card
+            variant={color === 'primary' ? 'primary' : 'background'}
+            backgroundImage={color === 'primary' ? undefined : p1}
+          >
+            <InsightCardContent content={content} />
+          </Card>
+        }
+        back={
+          <Card
+            variant={color === 'primary' ? 'primary' : 'background'}
+            backgroundImage={color === 'primary' ? undefined : p2}
+          >
+            <InsightCardContent content={content} face="back" />
+          </Card>
+        }
+      />
       <Box color={color}>
         <Icon as={NkAArrowDown} size={color === 'primary' ? 120 : 24}></Icon>
       </Box>
-
-      <Card
-        variant={color === 'primary' ? 'primary' : 'background'}
-        backgroundImage={color === 'primary' ? undefined : p1}
-      >
-        <Text color="white">card</Text>
-      </Card>
       <Text variant={color === 'primary' ? 'sectionTitle' : 'headLine'}>
-        I am Text
+        Text
       </Text>
       <Image
         src={p1}
         variant={color === 'primary' ? 'default' : 'pointed'}
-      ></Image>
+      ></Image> */}
       {/*  <Grid columns={6} w="full" h="full">
         {[1, 2, 3, 4, 5].map((item, index) => {
           return (

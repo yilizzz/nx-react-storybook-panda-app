@@ -1,6 +1,6 @@
 import React, { ElementType, forwardRef } from 'react';
 import { pill, type PillVariantProps } from '@styled-system/ui/recipes';
-import { Group } from '@styled-system/ui/jsx';
+import { HStack } from '@styled-system/ui/jsx';
 import { Icon } from 'src/ui/lib/typography/icon/icon';
 interface PillProps extends PillVariantProps {
   children: React.ReactNode;
@@ -15,7 +15,7 @@ export const Pill = forwardRef<HTMLDivElement, PillProps>(
     });
     return (
       <div ref={ref} {...rest} className={generatedClassName}>
-        <Group
+        <HStack
           w="full"
           h="full"
           color={color}
@@ -25,7 +25,7 @@ export const Pill = forwardRef<HTMLDivElement, PillProps>(
         >
           {children}
           {icon && <Icon as={icon} />}
-        </Group>
+        </HStack>
       </div>
     );
   }
