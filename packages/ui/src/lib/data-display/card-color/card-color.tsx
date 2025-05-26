@@ -1,13 +1,16 @@
 import React, { forwardRef } from 'react';
-import { cardStyles, type CardVariants } from './card-color.cva.recipe';
-type CardProps = CardVariants & {
+import {
+  cardColorStyles,
+  type CardColorVariants,
+} from './card-color.cva.recipe';
+type CardProps = CardColorVariants & {
   children: React.ReactNode;
   backgroundImage?: string;
 };
 
 export const CardColor = forwardRef<HTMLDivElement, CardProps>(
   ({ children, variant, backgroundImage, ...rest }, ref) => {
-    const generatedClassName = cardStyles({
+    const generatedClassName = cardColorStyles({
       variant,
     });
     return (

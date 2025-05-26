@@ -8,9 +8,10 @@ import {
   CardDeco,
   CardInfo,
   Pill,
-  CardColor,
+  //CardColor,
 } from '@packages/ui';
 import { Card } from '@packages/ui';
+import { CardColor } from './components/card-color';
 import { NkAArrowDown } from '@packages/icons';
 import {
   Center,

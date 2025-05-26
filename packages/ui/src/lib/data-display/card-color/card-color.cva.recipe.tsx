@@ -1,7 +1,7 @@
 import { cva, type RecipeVariantProps } from '@styled-system/ui/css';
 import { styled } from '@styled-system/ui/jsx';
 
-export const cardStyles = cva({
+export const cardColorStyles = cva({
   base: {
     display: 'inline-flex',
     width: '100%',
@@ -26,12 +26,12 @@ export const cardStyles = cva({
       },
 
       primary: {
-        background: 'primary.300',
+        background: 'primary.900',
         padding: '6',
         borderRadius: 'lg',
       },
       secondary: {
-        background: 'secondary.200',
+        background: 'secondary.900',
         padding: '6',
         borderRadius: 'lg',
       },
@@ -42,5 +42,5 @@ export const cardStyles = cva({
     variant: 'neutral',
   },
 });
-export type CardVariants = RecipeVariantProps<typeof cardStyles>;
-export const Card = styled('div', cardStyles);
+export type CardColorVariants = RecipeVariantProps<typeof cardColorStyles>;
+export const cardColor = styled('div', cardColorStyles);

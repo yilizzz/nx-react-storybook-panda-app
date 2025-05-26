@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { CardColor } from './card-color';
-import { cardStyles } from './card-color.cva.recipe';
+import { cardColorStyles } from './card-color.cva.recipe';
 import p from 'src/ui/assets/p.png';
 import { Text } from 'src/ui/lib/typography/text/text';
 import { useState } from 'react';
@@ -12,7 +12,7 @@ export default meta;
 type Story = StoryObj<typeof CardColor>;
 
 export const dynamicProps: Story = {
-  args: cardStyles.raw({}),
+  args: cardColorStyles.raw({}),
   render: (args) => {
     const [color, setColor] = useState('primary');
     return (

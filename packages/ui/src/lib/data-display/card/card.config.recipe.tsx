@@ -29,7 +29,7 @@ export const cardRecipe = defineRecipe({
         borderRadius: 'lg',
       },
       primary: {
-        background: 'primary.900',
+        background: 'primary.100',
         padding: '6',
         borderRadius: 'lg',
       },
@@ -39,7 +39,7 @@ export const cardRecipe = defineRecipe({
         borderRadius: 'lg',
       },
       secondary: {
-        background: 'secondary',
+        background: 'secondary.100',
         padding: '6',
         borderRadius: 'lg',
       },
