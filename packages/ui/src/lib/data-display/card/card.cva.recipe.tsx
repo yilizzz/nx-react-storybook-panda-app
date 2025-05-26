@@ -1,8 +1,7 @@
-import { defineRecipe } from '@pandacss/dev';
+import { cva, type RecipeVariantProps } from '@styled-system/ui/css';
+import { styled } from '@styled-system/ui/jsx';
 
-export const cardRecipe = defineRecipe({
-  className: 'card',
-  description: 'The styles for the Card component',
+export const cardStyles = cva({
   base: {
     display: 'inline-flex',
     backgroundSize: 'cover',
@@ -56,5 +55,6 @@ export const cardRecipe = defineRecipe({
   defaultVariants: {
     variant: 'neutral',
   },
-  jsx: ['Card'],
 });
+export type CardVariants = RecipeVariantProps<typeof cardStyles>;
+export const Card = styled('div', cardStyles);

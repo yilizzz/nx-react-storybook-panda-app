@@ -13,6 +13,8 @@ export const cardDecoRecipe = defineSlotRecipe({
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
+      width: '100%',
+      height: '100%',
     },
     deco: { width: '200px', height: '200px' },
     content: {

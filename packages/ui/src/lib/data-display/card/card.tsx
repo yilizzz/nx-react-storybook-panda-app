@@ -1,14 +1,13 @@
 import React, { forwardRef } from 'react';
-import { card, type CardVariantProps } from '@styled-system/ui/recipes';
-
-interface CardProps extends CardVariantProps {
+import { cardStyles, CardVariants } from './card.cva.recipe';
+type CardProps = CardVariants & {
   children: React.ReactNode;
   backgroundImage?: string;
-}
+};
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ children, variant, backgroundImage, ...rest }, ref) => {
-    const generatedClassName = card({
+    const generatedClassName = cardStyles({
       variant,
     });
     return (

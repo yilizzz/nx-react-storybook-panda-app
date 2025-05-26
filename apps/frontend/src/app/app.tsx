@@ -1,7 +1,6 @@
 import { Route, Routes, Link } from 'react-router-dom';
-import { Text, Card, CardFlip, Icon, Image, Button } from '@packages/ui';
-//import { CardColor } from '@packages/ui';
-import { CardColor, cardStyles } from './components/card-color';
+import { Text, CardFlip, Icon, Image, Button, CardDeco } from '@packages/ui';
+import { Card } from '@packages/ui';
 import { NkAArrowDown } from '@packages/icons';
 import {
   Center,
@@ -17,8 +16,6 @@ import p2 from '@packages/ui/src/assets/p-inverse.png';
 import { InsightCardContent } from '@apps/frontend/app/components/insight-card-content';
 import { css, cva } from '@styled-system/frontend/css';
 import { useState } from 'react';
-import { token } from '@styled-system/frontend/tokens';
-import { styled } from '@styled-system/frontend/jsx';
 
 export function App() {
   const content = {
@@ -43,20 +40,18 @@ export function App() {
       <Button variant={color} shape={color === 'primary' ? 'circle' : 'normal'}>
         Click me
       </Button>
-      <CardColor
-        variant={color}
-        shape={color === 'primary' ? 'rounded' : 'normal'}
-      >
-        cva recipe front
-      </CardColor>
-      {/*  <CardColor variant={color}>cva recipe UI</CardColor> */}
+      <CardDeco deco={color === 'primary' ? p1 : p2}>CardDeco</CardDeco>
+
       <Box color={color}>Runtime conditions</Box>
 
       <Box color={color}>
         <Icon as={NkAArrowDown} size={color === 'primary' ? 120 : 24}></Icon>
       </Box>
 
-      <Card variant={color}>
+      <Card
+        variant={color === 'primary' ? 'primary' : 'background'}
+        backgroundImage={color === 'primary' ? undefined : p1}
+      >
         <Text color="white">card</Text>
       </Card>
       <Text variant={color === 'primary' ? 'sectionTitle' : 'headLine'}>
