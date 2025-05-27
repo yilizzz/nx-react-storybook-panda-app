@@ -7,6 +7,8 @@ import { cardInfoRecipe } from './src/lib/data-display/card-info/card-info.confi
 import { imageRecipe } from './src/lib/data-display/image/image.config.recipe';
 import { cardDecoRecipe } from './src/lib/data-display/card-deco/card-deco.config.recipe';
 import { buttonRecipe } from './src/lib/buttons/button.config.recipe';
+import { checkboxRecipe } from './src/lib/input/checkbox/checkbox.config.recipe';
+import { radioGroupRecipe } from './src/lib/input/radio-group/radio-group.config.recipe';
 export default defineConfig({
   globalCss: {
     ':root': {},
@@ -131,6 +133,8 @@ export default defineConfig({
         pill: pillRecipe,
         image: imageRecipe,
         button: buttonRecipe,
+        checkbox: checkboxRecipe,
+        radioGroup: radioGroupRecipe,
       },
     },
   },

@@ -8,7 +8,7 @@ import {
   CardDeco,
   CardInfo,
   Pill,
-  //CardColor,
+  Checkbox,
 } from '@packages/ui';
 import { Card } from '@packages/ui';
 import { CardColor } from './components/card-color';
@@ -27,7 +27,6 @@ import p2 from '@packages/ui/src/assets/p-inverse.png';
 import { InsightCardContent } from '@apps/frontend/app/components/insight-card-content';
 import { css, cva } from '@styled-system/frontend/css';
 import { useState } from 'react';
-
 export function App() {
   const content = {
     title: 'Energy Transition Project and technology evolution',
@@ -39,6 +38,7 @@ export function App() {
     duration: '10',
   };
   const [color, setColor] = useState('secondary');
+  const [checked, setChecked] = useState(false);
 
   return (
     <Stack>
@@ -47,6 +47,12 @@ export function App() {
       >
         color now : {color}
       </Button>
+      <Checkbox
+        variant="secondary"
+        label="checkbox"
+        checked={checked}
+        onChange={setChecked}
+      ></Checkbox>
       <CardColor variant={color === 'primary' ? 'secondary' : 'primary'}>
         CardColor CVA
       </CardColor>

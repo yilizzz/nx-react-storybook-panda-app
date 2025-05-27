@@ -8,3 +8,4 @@ export * from './lib/data-display/card-deco/card-deco';
 export * from './lib/data-display/card-color/card-color'; // cva recipe
 export * from './lib/data-display/image/image';
 export * from './lib/data-display/pill/pill';
+export * from './lib/input/checkbox/checkbox';
