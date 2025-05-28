@@ -9,3 +9,5 @@ export * from './lib/data-display/card-color/card-color'; // cva recipe
 export * from './lib/data-display/image/image';
 export * from './lib/data-display/pill/pill';
 export * from './lib/input/checkbox/checkbox';
+export * from './lib/input/radio-group/radio-group';
+export * from './lib/input/slider/slider-select';

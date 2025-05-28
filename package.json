@@ -57,6 +57,7 @@
   },
   "nx": {},
   "dependencies": {
+    "@ark-ui/react": "^5.9.2",
     "@figma-export/cli": "^4.4.0",
     "@figma-export/output-components-as-svgr": "^4.4.0",
     "autoprefixer": "^10.4.21",

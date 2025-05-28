@@ -2,6 +2,11 @@ import { defineConfig } from '@pandacss/dev';
 import pandaConfig from '@packages/ui/panda.config.ts';
 
 export default defineConfig({
+  globalCss: {
+    ':root': {
+      '--global-font-body': 'Rokkitt',
+    },
+  },
   // Whether to use css reset
   preflight: true,
 

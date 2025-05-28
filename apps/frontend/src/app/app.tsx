@@ -9,7 +9,10 @@ import {
   CardInfo,
   Pill,
   Checkbox,
+  RadioGroup,
+  SliderSelect,
 } from '@packages/ui';
+
 import { Card } from '@packages/ui';
 import { CardColor } from './components/card-color';
 import { NkAArrowDown } from '@packages/icons';
@@ -39,28 +42,51 @@ export function App() {
   };
   const [color, setColor] = useState('secondary');
   const [checked, setChecked] = useState(false);
-
+  const [selected, setSelected] = useState('apple');
+  const [value, setValue] = useState([40]);
   return (
-    <Stack>
-      <Button
-        onClick={() => setColor(color === 'primary' ? 'secondary' : 'primary')}
-      >
-        color now : {color}
-      </Button>
-      <Checkbox
-        variant="secondary"
-        label="checkbox"
-        checked={checked}
-        onChange={setChecked}
-      ></Checkbox>
-      <CardColor variant={color === 'primary' ? 'secondary' : 'primary'}>
-        CardColor CVA
-      </CardColor>
-      <Card variant={color === 'primary' ? 'secondary' : 'primary'}>
-        <Text>card</Text>
-      </Card>
+    <Container>
+      <Stack>
+        <Button
+          onClick={() =>
+            setColor(color === 'primary' ? 'secondary' : 'primary')
+          }
+        >
+          color now : {color}
+        </Button>
+        <Stack marginY={'7'}>
+          <SliderSelect
+            step={5}
+            min={20}
+            max={50}
+            value={value}
+            onValueChange={setValue}
+          />
+        </Stack>
+        <RadioGroup
+          items={[
+            { text: 'Apple', value: 'apple' },
+            { text: 'Strawberry', value: 'strawberry' },
+            { text: 'Orange', value: 'orange' },
+          ]}
+          label={'Choose'}
+          value={selected}
+          onChange={setSelected}
+        />
+        <Checkbox
+          variant="secondary"
+          label="checkbox"
+          checked={checked}
+          onChange={setChecked}
+        ></Checkbox>
+        <CardColor variant={color === 'primary' ? 'secondary' : 'primary'}>
+          CardColor CVA
+        </CardColor>
+        <Card variant={color === 'primary' ? 'secondary' : 'primary'}>
+          <Text>card</Text>
+        </Card>
 
-      {/*  <Pill variant={color === 'primary' ? 'default' : 'inverse'}>pill</Pill>
+        {/*  <Pill variant={color === 'primary' ? 'default' : 'inverse'}>pill</Pill>
       <CardInfo image={color === 'primary' ? p1 : p2}>CardInfo</CardInfo>
       <CardDeco
         deco={color === 'primary' ? p1 : p2}
@@ -96,7 +122,7 @@ export function App() {
         src={p1}
         variant={color === 'primary' ? 'default' : 'pointed'}
       ></Image> */}
-      {/*  <Grid columns={6} w="full" h="full">
+        {/*  <Grid columns={6} w="full" h="full">
         {[1, 2, 3, 4, 5].map((item, index) => {
           return (
             <GridItem w="full" h="full">
@@ -132,40 +158,41 @@ export function App() {
           />
         </GridItem>
       </Grid> */}
-      <br />
-      <hr />
-      <br />
-      <div role="navigation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
-          </li>
-        </ul>
-      </div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              This is the generated root route.{' '}
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
-          }
-        />
-        <Route
-          path="/page-2"
-          element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
-          }
-        />
-      </Routes>
-      {/* END: routes */}
-    </Stack>
+        <br />
+        <hr />
+        <br />
+        <div role="navigation">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/page-2">Page 2</Link>
+            </li>
+          </ul>
+        </div>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                This is the generated root route.{' '}
+                <Link to="/page-2">Click here for page 2.</Link>
+              </div>
+            }
+          />
+          <Route
+            path="/page-2"
+            element={
+              <div>
+                <Link to="/">Click here to go back to root page.</Link>
+              </div>
+            }
+          />
+        </Routes>
+        {/* END: routes */}
+      </Stack>
+    </Container>
   );
 }
 

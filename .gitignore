@@ -145,3 +145,5 @@ vitest.config.*.timestamp*
 ## Panda
 styled-system
 styled-system-studio
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
