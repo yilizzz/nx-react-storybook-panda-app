@@ -14,14 +14,15 @@ export const primary: Story = {
   render: (args) => {
     const [selected, setSelected] = useState('apple');
     const list = [
-      { text: 'apple', value: 'apple' },
+      { text: 'Apple', value: 'apple' },
       { text: 'Strawberry', value: 'strawberry' },
       { text: 'Orange', value: 'orange' },
     ];
+    console.log(selected);
     return (
       <RadioGroup
         {...args}
-        label="choose"
+        label="Choose un fruit pour ce midi"
         items={list}
         value={selected}
         onChange={setSelected}
