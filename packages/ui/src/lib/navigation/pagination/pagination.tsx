@@ -34,19 +34,22 @@ export const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
           {(pagination) =>
             pagination.pages.map((page, index) =>
               page.type === 'page' ? (
-                <arkPagination.Item
-                  key={index}
-                  {...page}
-                  className={classes.item}
-                  style={{
-                    background: page === currentPage ? 'secondary' : 'primary',
-                  }}
-                >
-                  {page.value}
-                </arkPagination.Item>
+                page.value === currentPage ? (
+                  <arkPagination.Item key={index} {...page}>
+                    <div className={classes.buttonActive}>{page.value}</div>
+                  </arkPagination.Item>
+                ) : (
+                  <arkPagination.Item key={index} {...page}>
+                    <div className={classes.buttonInactive}>{page.value}</div>
+                  </arkPagination.Item>
+                )
               ) : (
-                <arkPagination.Ellipsis key={index} index={index}>
-                  &#8230;
+                <arkPagination.Ellipsis
+                  key={index}
+                  index={index}
+                  className={'ellipsis'}
+                >
+                  <button>&#8230;</button>
                 </arkPagination.Ellipsis>
               )
             )

@@ -12,14 +12,14 @@ type Story = StoryObj<typeof Pagination>;
 export const paginationDefault: Story = {
   args: pagination.raw({}),
   render: (args) => {
-    const [page, setPage] = useState(6);
+    const [page, setPage] = useState(2);
 
     return (
       <Pagination
         {...args}
-        count={50}
-        pageSize={10}
-        siblingCount={5}
+        count={20}
+        pageSize={1}
+        siblingCount={3}
         currentPage={page}
         onPageChange={setPage}
       ></Pagination>
