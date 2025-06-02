@@ -10,6 +10,7 @@ import { buttonRecipe } from './src/lib/buttons/button.config.recipe';
 import { checkboxRecipe } from './src/lib/input/checkbox/checkbox.config.recipe';
 import { radioGroupRecipe } from './src/lib/input/radio-group/radio-group.config.recipe';
 import { sliderRecipe } from './src/lib/input/slider/slider-select.config.recipe';
+import { paginationRecipe } from './src/lib/navigation/pagination/pagination.config.recipe';
 export default defineConfig({
   globalCss: {
     ':root': {},
@@ -137,6 +138,7 @@ export default defineConfig({
         checkbox: checkboxRecipe,
         radioGroup: radioGroupRecipe,
         slider: sliderRecipe,
+        pagination: paginationRecipe,
       },
     },
   },
